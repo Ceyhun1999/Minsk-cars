@@ -1,0 +1,306 @@
+body {
+    font-family: "Futura PT";
+    background: #1e1d1f;
+}
+
+header.active {
+
+    box-shadow: 10px -6px 15px black;
+    background: #1e1d1f;
+    padding: 20px 0 !important;
+}
+
+.fontPTbook {
+    font-family: "Futura PT Book";
+}
+
+.fontPTExtra {
+    font-family: 'Futura PT Cond Extra';
+}
+
+.container {
+    max-width: 1400px !important;
+    padding: 0 15px !important;
+    margin: auto !important;
+}
+
+/*styling fixed whatsapp**/
+
+/* fixed socials start : js*/
+.fixed__socials {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    z-index: 999;
+}
+
+.fixed__socials .fixed-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    /* height: 265; */
+    height: 0;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.fixed__socials .fixed-icon-wrapper.active {
+    height: 225px;
+    padding-bottom: 20px;
+    padding: 10px;
+
+    /* background: #000;
+    border-radius: 20px; */
+}
+
+.fixed__socials .fixed-icon__item {
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    cursor: pointer;
+    color: white;
+
+    transition: 0.2s;
+
+    &:hover {
+        scale: 0.96;
+        box-shadow: #ffffff2c 0px 20px 30px -10px;
+    }
+}
+
+.fixed-icon__item-main {
+    border: 2px solid #fff;
+    background: #1e1d1f;
+
+}
+
+.fixed__socials .fixed-icon__item.bg {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fixed__socials .fixed-icon-wrapper.active+.fixed__open-close-icon-wrapper {
+    .fixed__socials__close {
+        color: white;
+        display: block;
+    }
+
+    .fixed__socials__open {
+        display: none;
+    }
+}
+
+.fixed__socials .fixed__open-close-icon-wrapper {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    -webkit-animation: email-an linear 1s infinite;
+    animation: email-an linear 1s infinite;
+    box-shadow: 0 8px 10px #1e1d1f;
+}
+
+.fixed__socials .fixed-icon-wrapper.active+.fixed__open-close-icon-wrapper {
+    animation: none !important;
+}
+
+@-webkit-keyframes email-an {
+    0% {
+        box-shadow: 0 8px 10px rgba(255, 255, 255, 0.2), 0 0 0 0 rgba(255, 255, 255, 0.2), 0 0 0 0 rgba(255, 255, 255, 0.2);
+    }
+
+    40% {
+        box-shadow: 0 8px 10px rgba(255, 255, 255, 0.2), 0 0 0 15px rgba(255, 255, 255, 0.2), 0 0 0 0 rgba(255, 255, 255, 0.2);
+    }
+
+    80% {
+        box-shadow: 0 8px 10px rgba(255, 255, 255, 0.2), 0 0 0 30px rgba(255, 255, 255, 0), 0 0 0 26.7px rgba(255, 255, 255, 0.067);
+    }
+
+    100% {
+        box-shadow: 0 8px 10px rgba(255, 255, 255, 0.2), 0 0 0 30px rgba(255, 255, 255, 0), 0 0 0 40px rgba(255, 255, 255, 0.0);
+    }
+}
+
+
+.fixed__socials .fixed__socials__close {
+    display: none;
+}
+
+/* main slider start 1200, 990, 767, 450*/
+.carousel-indicators {
+    bottom: 60px;
+}
+
+#main-slider {
+    position: relative;
+}
+
+#main-slider .slide-layer {
+    /*background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000f1e));*/
+    /*background: linear-gradient(transparent, rgba(0, 15, 30, .8));*/
+    background: linear-gradient(rgba(0, 15, 30, 0.3), rgba(0, 15, 30, 0.5));
+    /*height: 60%;*/
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 19;
+    opacity: 1;
+    /*bottom: 0;*/
+    top: 0;
+}
+
+#main-slider .carousel ol {
+    margin-bottom: 3rem;
+    z-index: 19;
+    padding: 20px;
+}
+
+#main-slider .carousel ol li {
+    width: 130px;
+    text-indent: 0;
+    height: 2px;
+    background-color: #fff;
+    -webkit-transition: 0.4s linear;
+    transition: 0.4s linear;
+    opacity: 0.3;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#main-slider .carousel ol li h6 {
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 15px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+#main-slider .carousel ol li.active {
+    opacity: 1;
+}
+
+#main-slider .carousel ol li.active::before {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #0c63b4;
+    -webkit-animation: mymove 4s linear !important;
+    animation: mymove 4s linear !important;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#main-slider .carousel ol li.active h6 {
+    margin-top: 13px !important;
+}
+
+#main-slider .carousel .carousel-inner {
+    height: 100vh;
+}
+
+#main-slider .carousel .carousel-inner .carousel-item {
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#main-slider .carousel .carousel-inner .carousel-item .item {
+    position: absolute;
+    bottom: 30%;
+    z-index: 19;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#main-slider .carousel .carousel-inner .carousel-item img {
+    position: absolute;
+    height: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation: imgscale 10s infinite;
+    animation: imgscale 10s infinite;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#main-slider .carousel .carousel-inner .carousel-item .item-text {
+    color: #fff;
+}
+
+#main-slider .carousel .carousel-inner .carousel-item .item-text h2 {
+    /*font-size: 53px;*/
+    font-size: 44px;
+    max-width: 800px;
+    font-weight: bold;
+}
+
+#main-slider .carousel .carousel-inner .carousel-item .more {
+    text-align: center;
+    min-width: 200px;
+    border: 2px solid #003593;
+    background-color: #003593;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.889rem;
+    line-height: 1;
+    margin-top: 24px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#main-slider .carousel .carousel-inner .carousel-item .more a {
+    color: #fff;
+    padding: 14px 24px;
+    display: block;
+}
+
+#main-slider .carousel .carousel-inner .carousel-item .more:hover {
+    border-color: #084985;
+    background-color: #084985;
+}
+
+@-webkit-keyframes mymove {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes mymove {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes imgscale {
+    to {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+@keyframes imgscale {
+    to {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
