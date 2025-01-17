@@ -6,7 +6,6 @@ $(document).ready(function () {
         interval: 4000,
         pause: false,
     });
-
 });
 
 const specialOffers = new Swiper(".special-offers__slider", {
@@ -63,4 +62,63 @@ window.addEventListener("scroll", () => {
     } else {
         header.classList.remove("active");
     }
+});
+
+//! QUESTION BLOCK
+function accordion() {
+    var accordionGroups = document.querySelectorAll(".accrodion-grp");
+
+    if (accordionGroups.length) {
+        accordionGroups.forEach(function (group) {
+            var accordionName = group.getAttribute("data-grp-name");
+            group.classList.add(accordionName);
+
+            var accordions = group.querySelectorAll(".accrodion");
+            accordions.forEach(function (accordion) {
+                var content = accordion.querySelector(".accrodion-content");
+
+                if (!accordion.classList.contains("active")) {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+
+                var title = accordion.querySelector(".accrodion-title");
+                title.addEventListener("click", function () {
+                    if (accordion.classList.contains("active")) {
+                        accordion.classList.remove("active");
+                        content.style.display = "none";
+                    } else {
+                        accordion.classList.add("active");
+                        content.style.display = "block";
+                    }
+                });
+            });
+        });
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    accordion();
+});
+
+const swiper = new Swiper(".swiper-card-item", {
+    // Optional parameters
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: ".swiper-scrollbar",
+    },
 });

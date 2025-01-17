@@ -1,3 +1,11 @@
+.cars-categories .active {
+    background: #fff !important;
+}
+
+.cars-categories .active h3 {
+    color: #000 !important;
+}
+
 body {
     font-family: "Futura PT";
     background: #1e1d1f;
@@ -25,7 +33,100 @@ header.active {
     margin: auto !important;
 }
 
-/*styling fixed whatsapp**/
+
+/*****PRICE-FORM START*****/
+#price-form .modal-content {
+    padding: 20px 0 0 0;
+    max-width: 500px;
+    margin: auto;
+}
+
+#price-form .modal-body {
+    padding: 10px 40px 40px 40px
+}
+
+#price-form .modal-title {
+    font-size: 18px !important
+}
+
+#price-form .modal-header {
+    margin: 0 40px 10px 40px;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    border-bottom: 1px solid var(--main-color);
+}
+
+#price-form .modal-title {
+    font-weight: 700;
+    color: #000
+}
+
+#price-form input.effect,
+#price-form .custom-form select.effect {
+    height: 50px
+}
+
+#price-form .effect,
+.projects-full-story__form .effect {
+    width: 100%;
+    border: 2px solid #e6ecf2;
+    padding: 12px 20px;
+    margin: 0 0 16px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    -webkit-appearance: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    position: relative;
+}
+
+#price-form .modal-content .btn-close {
+    display: block;
+    height: 20px;
+    opacity: .5;
+    position: absolute;
+    right: 50px;
+    top: 34px;
+    width: 20px;
+    z-index: 100;
+    padding: 0;
+    outline: transparent;
+}
+
+.modal-backdrop {
+    opacity: .8 !important
+}
+
+#price-form .btn-close:focus {
+    box-shadow: none !important
+}
+
+#price-form .submit-btn:hover {
+    background-color: #1e1d1fe1;
+}
+
+#price-form .submit-btn,
+.projects-full-story__form .submit-btn {
+    background-color: #1e1d1f;
+    color: #fff;
+    border-radius: 4px;
+    height: 50px;
+    line-height: 50px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    padding: 0 26px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+}
 
 /* fixed socials start : js*/
 .fixed__socials {
@@ -379,11 +480,198 @@ header.active {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 500px;
 }
 
 #advPhoto img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+
+/* question styling  */
+/* 992 768 */
+.accrodion {
+    transition: 0.4s;
+}
+
+.accrodion .accrodion-title {
+    border-bottom: 1px solid #ffffff;
+    position: relative;
+    padding: 22px 20px !important;
+    display: flex;
+    align-items: center;
+    cursor: auto;
+}
+
+.accrodion .accrodion-title:after {
+    content: "+";
+    font-size: 16px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    line-height: 48px;
+    color: #fff;
+}
+
+.accrodion.active {
+    box-shadow: 0 20px 35px rgb(0 0 0 / 8%);
+    padding: 35px 40px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.accrodion.active ol {
+    list-style: auto;
+}
+
+.accrodion.active .accrodion-title:after {
+    content: "-";
+    font-size: 20px;
+}
+
+.accrodion .accrodion-title h4 {
+    font-size: 20px;
+    line-height: 48px;
+    color: #000;
+    font-weight: 500;
+    max-width: 90%;
+}
+
+.accrodion-content {
+    font-size: 15px;
+    padding: 20px 10px;
+    line-height: 20px;
+    color: #000;
+    line-height: 30px;
+}
+
+.question-section {
+    padding: 60px 0;
+}
+
+.question-section h2 {
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+
+    /*header responsive 1024*/
+    header.active {
+        padding: 10px 0 !important;
+    }
+
+    /* 992 Question  start*/
+    .question-wrapper {
+        margin-top: 0;
+    }
+
+    .question-section h2 {
+        font-size: 30px;
+    }
+
+    .accrodion .accrodion-title h4 {
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+
+
+}
+
+
+@media (max-width: 768px) {
+
+    /* 768 Question start */
+    .question-section {
+        padding: 40px 0;
+    }
+
+    .section-title a {
+        font-size: 14px;
+    }
+
+    .question-section .section-title {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .accrodion-grp {
+        margin-top: 20px;
+    }
+
+    .accrodion .accrodion-title h4 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .accrodion.active {
+        padding: 35px 10px 20px;
+    }
+
+    .accrodion .accrodion-title {
+        padding: 10px;
+    }
+
+    .accrodion .accrodion-title:after {
+        right: 3%;
+    }
+
+
+    /*advantages responsive 1024*/
+    #advContents {
+        flex-direction: column;
+        padding: 0
+    }
+
+    #advantage {
+        padding: 120px 0 60px 0;
+    }
+
+    #advContents>div,
+    #productShort article,
+    #sideMenu,
+    .contactPage .row>div {
+        width: 100%
+    }
+
+    #advRight .advItem {
+        flex-direction: row
+    }
+
+    #advantange {
+        margin-bottom: 50px
+    }
+
+    .advIcon {
+        width: 13%;
+    }
+
+    .advContentText h3 {
+        font-size: 18px;
+    }
+
+    #advPhoto {
+        max-width: 350px;
+    }
+
+    .advItem {
+        gap: 20px;
+    }
+
+    .advContentText h3  {
+        margin-bottom: 10px;
+    }
+
+    .advIcon svg {
+        width: 34px!important;
+    }
 }

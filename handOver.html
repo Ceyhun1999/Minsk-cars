@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOACAR</title>
+    <title>Сдать авто</title>
     <link rel="shortcut icon" href="/img/logoCar.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/bootstrap.css" />
     <link rel="stylesheet" href="/css/aos.css">
@@ -18,6 +18,39 @@
 </head>
 
 <body>
+    <div class="modal fade" id="price-form" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">Рассчитать доход от своего авто</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" id="sendmail" name="sendmail" action="">
+                        <p style="margin-top:15px"></p>
+                        <div class="row">
+                            <div class="col-12">
+                                <input required="" type="text" name="ad" class="effect" placeholder="Ваше имя">
+                            </div>
+                            <div class="col-12">
+                                <input required="" type="number" name="ad" class="effect" placeholder="Номер телефона">
+                            </div>
+                            <div class="col-12">
+                                <input required="" type="email" name="phone" class="effect" placeholder="E-mail">
+                            </div>
+                            <div class="col-12">
+                                <textarea rows="6" name="qeyd" class="effect" placeholder="Ваше сообщение"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <input class="btn submit-btn" type="submit" name="submit2" value="Отправить">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="fixed__socials ">
         <ul class="fixed-icon-wrapper ">
             <!-- phone -->
@@ -112,12 +145,12 @@
         </div>
     </div>
     <header class="fixed w-full top-0 left-0 z-50 py-10 duration-200">
-        <div class="px-5 flex justify-between items-center">
+        <div class="pl-5 pr-12 flex justify-between items-center">
             <div class="flex items-center gap-5">
                 <a href="/">
-                    <img class="lg:w-20 w-16" src="/img/logoCar.png" alt="Logo">
+                    <img class="w-20" src="/img/logoCar.png" alt="Logo">
                 </a>
-                <ul class="lg:flex text-white text-[17px] gap-4 hidden">
+                <ul class="flex text-white text-[17px] gap-4">
                     <li><a href="">Автопарк</a></li>
                     <li><a href="">Условия</a></li>
                     <li><a href="">Отзывы</a></li>
@@ -125,7 +158,7 @@
                     <li><a href="">Сдать авто</a></li>
                 </ul>
             </div>
-            <div class="hidden items-center gap-20 lg:flex">
+            <div class="flex items-center gap-20">
                 <ul class="text-white text-[22px] flex gap-3 items-center">
                     <li>
                         <a href="">
@@ -148,432 +181,164 @@
                     8 (xxx) xxx xx-xx
                 </a>
             </div>
-            <button class="lg:hidden">
-                <i class="text-white fa-solid fa-bars"></i>
-            </button>
         </div>
     </header>
     <main>
-        <section id="main-slider">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="slide-layer"></div>
-
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active">
-                        <img class="w-100"
-                            src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1hQju6.img?w=1920&h=1080&m=4&q=51"
-                            alt="Up-cargo.ru">
-                    </div>
-                    <div class="carousel-item ">
-                        <img class="w-100"
-                            src="https://avatars.mds.yandex.net/i?id=3f8446abfd73e75e4f6f4c459427922e_l-5193708-images-thumbs&n=13"
-                            alt="Up-cargo.ru">
-                    </div>
-                    <div class="carousel-item ">
-                        <img class="w-100" src="https://file.autodoc.ru/news/avto-novosti/1497886829_3.jpg"
-                            alt="Up-cargo.ru">
-                    </div>
-                </div>
-            </div>
-            <div class="!absolute lg:!bottom-0  -bottom-[10vh] w-full  z-40 text-white  flex flex-col justify-end ">
-                <div class=" ">
-                    <div class="container">
-                        <h2 class="lg:text-[44px] text-[24px] font-bold mb-8">Аренда авто премиум класса в Минск</h2>
-                        <p class="lg:text-[28px] text-[20px] fontPTbook">Категории автомобилей:</p>
-                    </div>
-                    <div class="mt-4 grid lg:grid-cols-4 grid-cols-2 flex-wrap ">
-                        <a href=""
-                            class="border border-[#515050]   border-solid inline-block duration-200 hover:bg-white hover:!text-[#2c2b2e]  bg-[#2c2b2e] lg:p-10 p-5 flex justify-center items-center lg:text-xl text-white ">Внедорожники</a>
-                        <a href=""
-                            class="border border-[#515050]   border-solid inline-block duration-200 hover:bg-white hover:!text-[#2c2b2e]  bg-[#2c2b2e] lg:p-10 p-5 flex justify-center items-center lg:text-xl text-white ">Кабриолеты</a>
-                        <a href=""
-                            class="border border-[#515050]   border-solid inline-block duration-200 hover:bg-white hover:!text-[#2c2b2e]  bg-[#2c2b2e] lg:p-10 p-5 flex justify-center items-center lg:text-xl text-white ">Спорткары</a>
-                        <a href=""
-                            class="border border-[#515050]   border-solid inline-block duration-200 hover:bg-white hover:!text-[#2c2b2e]  bg-[#2c2b2e] lg:p-10 p-5 flex justify-center items-center lg:text-xl text-white ">Премиум</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="text-white">
-            <div id="advantage">
-                <div class="container !max-w-[1200px]">
-                    <div id="advContents">
-                        <div id="advLeft" class="adv">
-                            <div class="advItem">
-                                <div class="advIcon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" x="0" y="0"
-                                        viewBox="0 0 1000 1000" style="enable-background:new 0 0 512 512"
-                                        xml:space="preserve" class="">
-                                        <g>
-                                            <path
-                                                d="M484.32 42.83v23.52h-47.04v31.36h47.04v47.04h31.36V97.71h47.04V66.35h-47.04V19.31h-31.36zM170.72 89.87v23.52h-47.04v31.36h47.04v47.04h31.36v-47.04h47.04v-31.36h-47.04V66.35h-31.36zM797.92 89.87v23.52h-47.04v31.36h47.04v47.04h31.36v-47.04h47.04v-31.36h-47.04V66.35h-31.36zM110.16 348.39C55.08 417.19 10 474.03 10 474.81c0 1.96 488.04 505.88 490 505.88s490-503.92 490-505.88c0-.78-45.08-57.62-100.16-126.42L789.69 223.15H210.31zm297.52.4c-34.5 51.94-63.11 93.88-63.5 93.49s-23.13-42.73-50.57-94.27l-49.98-93.49H470.6zm298.51-.2c-27.64 51.74-50.57 94.08-51.16 94.08-.98-.2-100.35-148.57-122.3-182.48l-3.72-5.68h227.36zm-438.84 16.07 49.98 93.69h-127.4c-101.33 0-127.01-.59-125.83-2.55 6.86-10.98 150.53-187.38 151.9-186.2.78.79 23.91 43.71 51.35 95.06zm296.94-1.37 63.11 95.06H500c-107.6 0-127.4-.39-126.03-2.74 5.49-9.41 125.25-187.38 126.03-187.38.59 0 29.4 42.92 64.29 95.06zm298.31.98c39.2 49 71.93 90.36 73.11 91.53 1.37 1.96-23.91 2.55-125.64 2.55h-127.4l49.59-92.9c27.25-51.16 50.18-94.08 50.96-95.26 1.96-3.14-.78-6.47 79.38 94.08zM371.23 611.23c21.36 66.25 50.96 158.17 65.86 204.23 14.9 46.26 26.85 83.89 26.46 83.89s-79.77-81.73-176.4-181.89C190.32 617.5 100.94 525.38 88.6 512.64l-22.54-22.93 133.08.39 133.08.59zm263.62-119.17c-.59 1.37-30.97 95.45-67.42 208.74-36.46 113.48-66.84 206.39-67.42 206.39s-30.97-92.91-67.42-206.39c-36.47-113.29-66.85-207.37-67.24-208.74-.78-1.76 26.85-2.35 134.65-2.35s135.44.59 134.85 2.35zm276.55 20.58c-12.54 12.74-101.92 104.86-198.54 204.82-96.63 100.15-176.2 181.89-176.79 181.89s-.59-.59-.2-1.57c.59-.79 30.19-92.32 66.05-203.25 35.87-111.13 65.46-202.47 66.05-203.45.39-.78 60.56-1.37 133.47-1.37h132.69z"
-                                                fill="#fff" opacity="1" data-original="#fff"></path>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="advContentText">
-                                    <h3>Премиальный автопарк</h3>
-                                    <p>Мы предлагаем исключительно люксовые автомобили известных мировых брендов. </p>
-                                </div>
-                            </div>
-                            <div class="advItem">
-                                <div class="advIcon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" x="0" y="0"
-                                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
-                                        xml:space="preserve" class="">
-                                        <g>
-                                            <path
-                                                d="M375.626 185.497h46.8l-37.396 85.071M287.939 245.46h-53.421s28.284-51.268 32.952-56.995c4.72-5.791 9.189-2.179 9.615 2.929.426 5.108-.213 79.174-.213 79.174M220.685 271.204s-41.39.52-43.351-.133c-1.96-.654 3.143-4.106 30.28-42.879 5.068-7.241 7.858-13.35 9.044-18.468l.421-3.291c0-12.022-9.746-21.768-21.768-21.768-10.579 0-19.395 7.546-21.359 17.549M346.505 185.497 312.339 271.4"
-                                                style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
-                                                fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round"
-                                                stroke-linejoin="round" stroke-miterlimit="10" data-original="#fff">
-                                            </path>
-                                            <path
-                                                d="M24.357 278.919c-11.6-26.095-18.828-53.577-16.382-79.428.609-6.43 3.586-12.406 8.153-16.972l37.681-37.681c10.782-10.782 28.622-9.484 37.729 2.746l42.562 56.579a15 15 0 0 1-1.556 19.796l-27.57 26.681a10 10 0 0 0-1.537 12.468v.001a453.165 453.165 0 0 0 145.456 145.456v0a10.002 10.002 0 0 0 12.468-1.537l26.68-27.57a15.002 15.002 0 0 1 19.797-1.556l56.579 42.562c12.23 9.107 13.528 26.947 2.746 37.729l-37.681 37.681a28.478 28.478 0 0 1-17.645 8.215c-90.809 7.997-201.365-102.558-201.365-102.558s-40.213-40.213-70.38-92.055"
-                                                style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
-                                                fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round"
-                                                stroke-linejoin="round" stroke-miterlimit="10" data-original="#fff">
-                                            </path>
-                                            <path
-                                                d="M159.287 88.7c73.41-65.806 186.33-63.431 256.887 7.126 73.016 73.016 73.016 191.397 0 264.413-20.353 20.353-44.23 35.032-69.668 44.038M107.499 166.128a185.676 185.676 0 0 1 29.404-53.577"
-                                                style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
-                                                fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round"
-                                                stroke-linejoin="round" stroke-miterlimit="10" data-original="#fff">
-                                            </path>
-                                            <path
-                                                d="M449.933 82.796c75.957 86.626 72.615 218.536-10.026 301.176-19.571 19.571-41.906 34.695-65.748 45.371M82.803 137.514c10.668-23.719 25.743-45.94 45.225-65.422 81.695-81.695 211.54-85.896 298.187-12.601"
-                                                style="stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
-                                                fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round"
-                                                stroke-linejoin="round" stroke-miterlimit="10" data-original="#fff">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="advContentText">
-                                    <h3>Круглосуточная поддержка</h3>
-                                    <p>Наши специалисты готовы прийти на помощь в любое время дня и ночи. Мы оперативно
-                                        решим все вопросы, связанные с арендой и т.д</p>
-                                </div>
-                            </div>
-                            <div class="advItem">
-                                <div class="advIcon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" x="0" y="0"
-                                        viewBox="0 0 64 64" style="enable-background:new 0 0 512 512"
-                                        xml:space="preserve" class="">
-                                        <g>
-                                            <path
-                                                d="M30.7 30.2H18.8c-.6 0-1-.4-1-1s.4-1 1-1h11.9c.6 0 1 .4 1 1s-.4 1-1 1z"
-                                                fill="#fff" opacity="1" data-original="#fff"></path>
-                                            <path
-                                                d="M8 29.8c-.1 0-.2 0-.3-.1l-3.5-1.3c-.8-.3-1.5-1.1-1.6-1.9v-.1l-.1-1.2c-.1-.9.2-1.7 1-2.3l.1-.1v-.2l.3-1.3c.1-1.1 1.2-2 2.5-2h1.5c1.5-.7 2.7-1.2 3.7-1.7 2.8-1.4 4.6-2.2 8-2.4 4.3-.5 6.2 1.1 9.5 3.8l.9.8.2.1h.2c5.1-.3 9.4.4 12.9 2.3.8.5 1.3 1.3 1.3 2.2v2.8c0 1.4-1.1 2.5-2.5 2.5h-.6c-.6 0-1-.4-1-1s.4-1 1-1h.5c.4 0 .5-.3.5-.5v-2.8c0-.1-.1-.3-.3-.4-3.2-1.7-7-2.4-11.7-2.1-.6.1-1.2 0-1.8-.5l-1-.8c-3.1-2.6-4.5-3.7-8-3.3-3.1.1-4.6.9-7.3 2.2-1 .5-2.2 1.1-3.8 1.7-.4.2-.7.2-1 .2H6.3c-.2 0-.5.2-.5.3L5.5 23c0 .7-.4 1.2-.9 1.6-.1.1-.2.2-.2.4v.1l.1 1.1c.1.2.2.4.4.4l3.5 1.3c.5.2.8.8.6 1.3-.2.4-.6.6-1 .6z"
-                                                fill="#fff" opacity="1" data-original="#fff"></path>
-                                            <path
-                                                d="M36 32.2c-2.4 0-4.3-1.9-4.3-4.3s1.9-4.3 4.3-4.3 4.3 1.9 4.3 4.3-1.9 4.3-4.3 4.3zm0-6.6c-1.3 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3 2.3-1 2.3-2.3-1-2.3-2.3-2.3zM13.4 32.2c-2.4 0-4.3-1.9-4.3-4.3s1.9-4.3 4.3-4.3 4.3 1.9 4.3 4.3-1.9 4.3-4.3 4.3zm0-6.6c-1.3 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3 2.3-1 2.3-2.3-1-2.3-2.3-2.3zM42.9 43.5H24c-.6 0-1-.4-1-1s.4-1 1-1h18.9c.6 0 1 .4 1 1s-.4 1-1 1z"
-                                                fill="#fff" opacity="1" data-original="#fff"></path>
-                                            <path
-                                                d="M7.3 43.5H3.9c-2.2 0-3.9-1.8-3.9-3.9v-3.1c0-2.2 1.8-4 4-4h42.9v-13c0-2.2 1.8-4 4-4h4.7c2 0 3.7 1.2 4.5 3l.6 1.4 3 7.3c.2.3.2.7.3.9 0 .1 0 .2.1.2 0 .1.1.2.1.3v10.8c0 2.2-1.7 3.9-3.9 3.9h-.6c-.6 0-1-.4-1-1s.4-1 1-1h.6c1 0 1.9-.9 1.9-1.9V28.8c0-.1 0-.2-.1-.3 0-.2-.1-.3-.1-.5l-3.6-8.8c-.5-1.1-1.5-1.8-2.7-1.8H51c-1.1 0-2 .9-2 2v14c0 .6-.4 1-1 1H4c-1.1 0-2 .9-2 2v3.1c0 1 .9 1.9 1.9 1.9h3.4c.6 0 1 .4 1 1s-.4 1.1-1 1.1z"
-                                                fill="#fff" opacity="1" data-original="#fff"></path>
-                                            <path
-                                                d="M59.9 29.7H54c-1.6 0-2.9-1.3-2.9-2.9v-4.6c0-1.6 1.3-2.9 2.9-2.9h2.5c.6 0 1 .4 1 1s-.4 1-1 1H54c-.6 0-.9.5-.9.9v4.6c0 .6.5.9.9.9h5.9c.6 0 1 .4 1 1s-.4 1-1 1zM52.1 34.9c-.6 0-1-.4-1-1v-1.8c0-.6.4-1 1-1s1 .4 1 1v1.8c0 .6-.4 1-1 1zM61.4 38.2h-.1c-1.3 0-2.5-.5-3.4-1.4-.7-.7-.9-1.8-.5-2.8s1.4-1.6 2.4-1.6h1.6c1.5 0 2.6 1.1 2.6 2.6v.6c0 1.5-1.1 2.6-2.6 2.6zm-1.6-3.8c-.3 0-.5.2-.6.4s-.1.4.1.6c.5.5 1.3.8 2 .8h.1c.3 0 .6-.3.6-.6V35c0-.3-.3-.6-.6-.6zM51.2 48.8c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm0-10.6c-2.3 0-4.3 2-4.3 4.3s2 4.3 4.3 4.3 4.3-2 4.3-4.3c0-2.5-1.8-4.3-4.3-4.3zM15.6 48.8c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm0-10.6c-2.3 0-4.3 2-4.3 4.3s2 4.3 4.3 4.3 4.3-2 4.3-4.3c0-2.4-1.9-4.3-4.3-4.3z"
-                                                fill="#fff" opacity="1" data-original="#fff"></path>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="advContentText">
-                                    <h3>Доставка автомобиля</h3>
-                                    <p>Мы обеспечиваем удобную и быструю доставку автомобилей по всему Минску. Вам не
-                                        нужно тратить время.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="advPhoto">
-                            <img loading="lazy" src="https://dayun.az/images/opendoorscar.png" alt="Luxury Car">
-                        </div>
-                        <div id="advRight" class="adv">
-                            <div class="advItem">
-                                <div class="advIcon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" x="0" y="0"
-                                        viewBox="0 0 60 60" style="enable-background:new 0 0 512 512"
-                                        xml:space="preserve" class="">
-                                        <g>
-                                            <g fill="#fff" fill-rule="nonzero">
-                                                <path
-                                                    d="M45.4 6.65 30.4.084a1 1 0 0 0-.8 0l-15 6.566a1 1 0 0 0-.6.916v15.7c.005 3.528 1.7 6.84 4.56 8.908l10.367 7.477a1.83 1.83 0 0 0 2.146 0l10.367-7.476A11.014 11.014 0 0 0 46 23.267V7.566a1 1 0 0 0-.6-.916ZM44 23.267a9.009 9.009 0 0 1-3.73 7.286L30 37.96l-10.27-7.407A9.009 9.009 0 0 1 16 23.267V8.22l14-6.128L44 8.22v15.047Z"
-                                                    fill="#fff" opacity="1" data-original="#fff"></path>
-                                                <path
-                                                    d="m29.6 4.45-11 4.816a1 1 0 0 0-.6.916v13.085a7 7 0 0 0 2.9 5.664l8.515 6.142a1 1 0 0 0 1.17 0l8.515-6.142a7 7 0 0 0 2.9-5.664V10.182a1 1 0 0 0-.6-.916l-11-4.816a1 1 0 0 0-.8 0ZM40 10.835v12.432a5 5 0 0 1-2.07 4.042L30 33.029l-7.93-5.72A5 5 0 0 1 20 23.267V10.835l10-4.377 10 4.377ZM8.285 33.2l-2.163-5.054a3.188 3.188 0 1 0-5.833 2.575l3.919 8.621a10.621 10.621 0 0 0 2.171 3.134l6.163 6.164c-.347.368-.54.854-.542 1.36v8a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2v-1.861a10.478 10.478 0 0 0-2.192-6.55 7.2 7.2 0 0 0-3.333-2.431 19.782 19.782 0 0 1-5.725-3.674 4.6 4.6 0 0 0-5.465-.284ZM25 58H14v-8h11v8Zm-3.753-17.162A8.485 8.485 0 0 1 23 46.139V48h-8.269l-6.938-6.938a8.649 8.649 0 0 1-1.765-2.547l-3.919-8.621a1.189 1.189 0 1 1 2.174-.96l2.237 5.217a11.8 11.8 0 0 0 2.522 3.725l4.568 4.569a1 1 0 1 0 1.414-1.414l-4.568-4.569a9.863 9.863 0 0 1-1.233-1.5 2.6 2.6 0 0 1 3.239.054 21.321 21.321 0 0 0 6.38 4.04 5.253 5.253 0 0 1 2.405 1.782Z"
-                                                    fill="#fff" opacity="1" data-original="#fff"></path>
-                                                <path
-                                                    d="M22 53h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2ZM55.792 39.342l3.919-8.621a3.188 3.188 0 1 0-5.832-2.575l-2.158 5.035a4.612 4.612 0 0 0-5.471.3 19.782 19.782 0 0 1-5.725 3.674 7.2 7.2 0 0 0-3.333 2.431A10.478 10.478 0 0 0 35 46.139V48a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-8a1.988 1.988 0 0 0-.542-1.36l6.163-6.164a10.621 10.621 0 0 0 2.171-3.134ZM46 58H35v-8h11v8Zm-.731-10H37v-1.861a8.485 8.485 0 0 1 1.753-5.3 5.256 5.256 0 0 1 2.4-1.783 21.312 21.312 0 0 0 6.381-4.04 2.6 2.6 0 0 1 3.245-.063 9.806 9.806 0 0 1-1.239 1.51l-4.568 4.569a1 1 0 0 0 1.414 1.414l4.568-4.569a11.8 11.8 0 0 0 2.522-3.725l2.237-5.218a1.187 1.187 0 0 1 2.091-.175c.22.34.25.768.083 1.136l-3.919 8.621a8.649 8.649 0 0 1-1.765 2.547L45.269 48Z"
-                                                    fill="#fff" opacity="1" data-original="#fff"></path>
-                                                <path
-                                                    d="M39 53h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2ZM24.6 21.2a1 1 0 0 0-1.2 1.6l4 3a1 1 0 0 0 1.432-.245l8-12a1 1 0 1 0-1.664-1.11l-7.414 11.121L24.6 21.2Z"
-                                                    fill="#fff" opacity="1" data-original="#fff"></path>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="advContentText">
-                                    <h3>Страхование включено</h3>
-                                    <p>Мы заботимся о вашей безопасности и включаем страхование КАСКО и ОСАГО в
-                                        стоимость аренды.</p>
-                                </div>
-                            </div>
-                            <div class="advItem">
-                                <div class="advIcon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" x="0" y="0"
-                                        viewBox="0 0 510 510" style="enable-background:new 0 0 512 512"
-                                        xml:space="preserve" fill-rule="evenodd" class="">
-                                        <g>
-                                            <path
-                                                d="M223.741 344.946H15a8 8 0 0 1-7.954-8.855c7.982-74.33 61.912-134.912 132.812-152.73-29.793-15.667-50.184-46.955-50.184-82.846C89.674 49.022 131.65 7 183.144 7c51.542 0 93.516 42.023 93.516 93.515 0 35.892-20.393 67.183-50.204 82.849a175.99 175.99 0 0 1 40.692 15.812l92.95-39.813a7.995 7.995 0 0 1 6.299 0l131.752 56.412A8.002 8.002 0 0 1 503 223.13v113.649c0 81.05-58.733 151.355-138.296 166.087a7.973 7.973 0 0 1-2.914 0c-76.832-14.235-134.261-80.355-138.049-157.92zm-40.597-150.915c-80.041 0-146.452 58.394-158.99 134.915h199.387V223.13a8 8 0 0 1 4.851-7.354l19.34-8.284c-19.771-8.658-41.617-13.461-64.588-13.461zm0-16c42.724 0 77.516-34.833 77.516-77.516C260.66 57.833 225.868 23 183.144 23c-42.681 0-77.47 34.834-77.47 77.515 0 42.682 34.789 77.516 77.47 77.516zm180.104-2.612-123.707 52.987v108.373c0 72.879 52.462 136.157 123.708 150.077C434.537 472.936 487 409.659 487 336.779V228.407zm63.643 105.559h4.484c9.99 0 18.151 8.206 18.151 18.305V409.17c0 10.141-8.161 18.304-18.151 18.304H295.19c-9.985 0-18.175-8.168-18.175-18.304V299.283c0-10.094 8.19-18.305 18.175-18.305h4.46V265.26c0-35.491 28.671-64.474 63.632-64.474 34.963 0 63.609 28.982 63.609 64.474zm-111.241 0h9.484V265.26c0-21.233 17.262-38.628 38.148-38.628 20.887 0 38.148 17.395 38.148 38.628v15.718h9.461V265.26c0-26.625-21.38-48.474-47.609-48.474s-47.632 21.848-47.632 48.474zm25.484 0h44.296V265.26c0-12.384-9.966-22.628-22.148-22.628-12.181 0-22.148 10.244-22.148 22.628zm-45.944 16c-1.226 0-2.175 1.065-2.175 2.305V409.17c0 1.245.949 2.304 2.175 2.304h136.185c1.221 0 2.151-1.064 2.151-2.304V299.283c0-1.235-.93-2.305-2.151-2.305zm33.781 57.462c-3.122-3.122-3.122-8.192 0-11.314s8.192-3.122 11.314 0l17.067 17.067 28.904-28.904c3.122-3.122 8.192-3.122 11.314 0s3.122 8.191 0 11.313l-34.561 34.562a8 8 0 0 1-11.314 0z"
-                                                fill="#fff" opacity="1" data-original="#fff"></path>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="advContentText">
-                                    <h3>Полная конфиденциальность</h3>
-                                    <p>В наших автомобилях не ведется видео- и аудиозапись, что гарантирует полную
-                                        конфиденциальность. </p>
-                                </div>
-                            </div>
-                            <div class="advItem">
-                                <div class="advIcon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" x="0" y="0"
-                                        viewBox="0 0 64 64" style="enable-background:new 0 0 512 512"
-                                        xml:space="preserve" class="">
-                                        <g>
-                                            <path
-                                                d="m60.501 26.72-3.752-3.002-.045-.039 3.493-.699A.998.998 0 0 0 61 22v-3a1 1 0 0 0-1-1h-5a1 1 0 0 0-1 1v1.752l-.069-.093a.97.97 0 0 0-.317-.429c-.563-.797-1.045-1.595-1.359-2.285l-1.69-3.717C49.488 11.857 46.604 10 44 10H20c-2.604 0-5.488 1.857-6.565 4.228l-1.689 3.716c-.314.69-.796 1.489-1.359 2.286a.977.977 0 0 0-.317.429l-.069.093V19a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v3c0 .477.336.887.804.98l3.493.699-.045.039-3.753 3.002C1.537 28.29 0 31.488 0 34v17c0 1.654 1.346 3 3 3h8c1.654 0 3-1.346 3-3v-2h36v2c0 1.654 1.346 3 3 3h8c1.654 0 3-1.346 3-3V34c0-2.512-1.537-5.71-3.499-7.28zM51.414 47l-2.293-2.293C48.148 43.734 46.376 43 45 43H18.5c-1.376 0-3.148.734-4.121 1.707L12.086 47H5c-1.654 0-3-1.346-3-3v-5h1v1c0 2.206 1.794 4 4 4h3a1 1 0 0 0 0-2H7c-1.103 0-2-.897-2-2v-1h2c.83 0 2.12.534 2.707 1.121a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414C10.148 37.734 8.377 37 7 37H2v-3c0-.353.056-.734.135-1.123C2.775 33.545 3.706 34 5 34h8a1 1 0 0 0 .707-.293L15 32.414l1.293 1.293A.997.997 0 0 0 17 34h11.586l2.707 2.707a.997.997 0 0 0 1.414 0L35.414 34H47c.265 0 .52-.105.707-.293L49 32.414l1.293 1.293A.997.997 0 0 0 51 34h8c1.294 0 2.225-.455 2.865-1.123.079.389.135.77.135 1.123v3h-5c-1.376 0-3.148.734-4.121 1.707a.999.999 0 1 0 1.414 1.414C54.88 39.534 56.17 39 57 39h2v1c0 1.103-.897 2-2 2h-3a1 1 0 0 0 0 2h3c2.206 0 4-1.794 4-4v-1h1v5c0 1.654-1.346 3-3 3zm-2.828 0H14.914l.879-.879C16.38 45.534 17.67 45 18.5 45H45c.83 0 2.12.534 2.707 1.121zM11.56 22h40.88c.969 1.281 2.076 2.493 3.059 3.28l1.203.962-7.073 2.829-.002.001a1.001 1.001 0 0 0-.333.22l-1 1L46.586 32H35a.997.997 0 0 0-.707.293L32 34.586l-2.293-2.293A.997.997 0 0 0 29 32H17.414l-1.707-1.707-1-1a1.001 1.001 0 0 0-.333-.22l-.002-.001-7.073-2.829 1.203-.962c.982-.788 2.089-2 3.058-3.281zm49.381 8.419C60.74 31.464 60.092 32 59 32h-7.586l-1-1 .148-.148 7.935-3.174.754.604c.634.507 1.219 1.278 1.69 2.137zM56 20h3v1.18l-3 .6zm-42.435-1.228 1.689-3.716C16.008 13.399 18.181 12 20 12h24c1.819 0 3.992 1.399 4.745 3.055l1.69 3.717c.176.386.405.803.656 1.228H12.909c.251-.425.481-.842.656-1.228zM5 20h3v1.78l-3-.6zm-.252 8.282.754-.604 7.936 3.174.148.148-1 1H5c-1.092 0-1.74-.536-1.941-1.581.471-.859 1.055-1.63 1.689-2.137zM11 52H3c-.551 0-1-.449-1-1v-3.025A4.954 4.954 0 0 0 5 49h7v2c0 .551-.449 1-1 1zm50 0h-8c-.551 0-1-.449-1-1v-2h7c1.13 0 2.162-.391 3-1.025V51c0 .551-.449 1-1 1z"
-                                                fill="#fff" opacity="1" data-original="#fff"></path>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="advContentText">
-                                    <h3>10 лет на рынке</h3>
-                                    <p>Мы успешно работаем в сфере аренды люксовых автомобилей уже более 10 лет. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- <section>
+        <section class=" pt-[150px] pb-[60px]">
             <div class="container">
-                <div style="background: url(/img/advantages.png) center/cover" class="py-52 ">
-                    <div class="flex justify-center mx-auto gap-20 text-white">
-                        <div class="text-center ">
-                            <h2 style=" -webkit-text-stroke: 1px #fff; " class="mb-3 text-transparent text-8xl">10 лет
-                            </h2>
-                            <p class="text-lg max-w-64 mx-auto  font-medium">На рынке аренды премиальных автомобилей</p>
-                        </div>
-                        <div class="text-center ">
-                            <h2 style=" -webkit-text-stroke: 1px #fff; " class="mb-3 text-transparent text-8xl">72</h2>
-                            <p class="text-lg max-w-48 mx-auto  font-medium">автомобиля в нашем автопарке</p>
-                        </div>
-                        <div class="text-center ">
-                            <h2 style=" -webkit-text-stroke: 1px #fff;" class="mb-3  text-transparent text-8xl">1 млрд
-                            </h2>
-                            <p class="text-lg max-w-56 mx-auto  font-medium">Рублей стоимость автопарка Moscow Dream
-                                Cars</p>
-                        </div>
-                    </div>
+                <div>
+                    <a href="/"
+                        class="text-[#fff] border border-solid border-transparent duration-300 mr-5 py-[10px] px-[20px] inline-block rounded-lg bg-[#515050] hover:bg-[#181719] hover:border-[#515050]  text-sm">Главная</a>
+                    <a
+                        class=" py-[10px] px-[20px] inline-block border border-solid border-[#515050] rounded-lg  bg-[#181719] text-[white] text-sm">Сдать
+                        авто</a>
                 </div>
-            </div>
-        </section> -->
-        <section class="lg:py-10 py-5">
-            <div class="container">
-                <h2 class="text-white lg:text-4xl text-2xl font-bold mb-5">Категории автомобилей</h2>
-                <div class="grid md:grid-cols-2 lg:gap-3 gap-2" data-aos="fade-down" data-aos-duration="500">
-                    <a href="" style="box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;"
-                        class="bg-[#222123] lg:py-10 py-5  flex lg:gap-5 gap-3  flex-col md:flex-row items-center justify-center group border border-transparent border-solid duration-200 hover:border-white"">
-                        <h3 class=" text-white text-xl lg:text-3xl">Внедорожники</h3>
-                        <div class="relative  ">
-                            <img class="lg:w-44 w-32 relative z-10"
-                                src="https://pngimg.com/uploads/mercedes/mercedes_PNG1896.png" alt="">
-                            <div
-                                class="absolute duration-500 group-hover:scale-105 scale-0  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-20 h-20 border border-solid border-white rounded-full">
-
-                            </div>
-                            <div
-                                class="absolute duration-200 group-hover:scale-110 scale-0  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-[100px] h-[100px] border border-solid border-[#949494] rounded-full">
-
-                            </div>
-
-                        </div>
-                    </a>
-                    <a href="" style="box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;"
-                        class="bg-[#222123] lg:py-10 py-5  flex lg:gap-5 gap-3  flex-col md:flex-row items-center justify-center group border border-transparent border-solid duration-200 hover:border-white">
-                        <h3 class="text-white  text-xl lg:text-3xl">Кабриолеты</h3>
-                        <div class="relative  ">
-                            <img class="lg:w-44 w-32  relative z-10"
-                                src="https://i.pinimg.com/originals/19/66/2f/19662f7cd8a53aa90d5ef2871e65a60d.png"
-                                alt="">
-                            <div
-                                class="absolute duration-500 group-hover:scale-105 scale-0  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-20 h-20 border border-solid border-white rounded-full">
-
-                            </div>
-                            <div
-                                class="absolute duration-200 group-hover:scale-110 scale-0  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-[100px] h-[100px] border border-solid border-[#949494] rounded-full">
-
-                            </div>
-
-                        </div>
-                    </a>
-                    <a href="" style="box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;"
-                        class="bg-[#222123] lg:py-10 py-5  flex lg:gap-5 gap-3  flex-col md:flex-row items-center justify-center group border border-transparent border-solid duration-200 hover:border-white"">
-                        <h3 class=" text-white text-xl lg:text-3xl">Спорткары</h3>
-                        <div class="relative  ">
-                            <img class="lg:w-44 w-32 relative z-10"
-                                src="https://imstyled.com/storage/2023/06/Lambo_png.png" alt="">
-                            <div
-                                class="absolute duration-500 group-hover:scale-105 scale-0  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-20 h-20 border border-solid border-white rounded-full">
-
-                            </div>
-                            <div
-                                class="absolute duration-200 group-hover:scale-110 scale-0  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-[100px] h-[100px] border border-solid border-[#949494] rounded-full">
-
-                            </div>
-
-                        </div>
-                    </a>
-                    <a href="" style="box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;"
-                        class="bg-[#222123] lg:py-10 py-5  flex lg:gap-5 gap-3  flex-col md:flex-row items-center justify-center group border border-transparent border-solid duration-200 hover:border-white"">
-                        <h3 class=" text-white text-xl lg:text-3xl">Премиум</h3>
-                        <div class="relative  ">
-                            <img class="lg:w-44 w-32 relative z-10"
-                                src="https://i.siteapi.org/MV9Il3o6vlLRJRzmf4xuJHRcbFk=/fit-in/1024x768/center/top/0827db7d25c6752.ru.s.siteapi.org/img/fec76e605be880b0131a05ee494d509a70a00968.png"
-                                alt="">
-                            <div
-                                class="absolute duration-500 group-hover:scale-105 scale-0  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-20 h-20 border border-solid border-white rounded-full">
-
-                            </div>
-                            <div
-                                class="absolute duration-200 group-hover:scale-110 scale-0  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-[100px] h-[100px] border border-solid border-[#949494] rounded-full">
-
-                            </div>
-
-                        </div>
-                    </a>
-                </div>
-
             </div>
         </section>
-        <section class="mt-10" data-aos="fade-down" data-aos-duration="500">
-            <div class="container !max-w-[1250px]">
-                <div class="bg-[#111111] pt-24 pb-10 lg:grid flex items-center flex-col-reverse grid-cols-2 relative"
+        <section data-aos="fade-down" data-aos-duration="500">
+            <div class="container ">
+                <div class="bg-[#111111] pt-24 pb-10 relative"
                     style="box-shadow: #111111 0px 0.0625em 0.0625em, #111111 0px 0.125em 0.5em, #111111 0px 0px 0px 1px inset;">
-                    <img class="hidden lg:block absolute top-5 left-5" src="/img/left-corner.svg" alt="">
-                    <img class="hidden lg:block  absolute bottom-5 right-5" src="/img/right-corner.svg" alt="">
+                    <img class="absolute top-5 left-5" src="/img/left-corner.svg" alt="">
+                    <img class="absolute bottom-5 right-5" src="/img/right-corner.svg" alt="">
 
-                    <div class="lg:pl-20">
-                        <div class="flex gap-3 items-start">
-                            <img class="w-10 lg:block hidden" src="/img/inst.svg" alt="">
-                            <h2 class="flex lg:text-4xl md:text-3xl text-2xl  text-white relative flex-col fontPTExtra">
-                                <span class="flex items-center ">
-                                    <span class="inline-block mr-2 lg:mb-3 mb-1"> Youtube Канал</span>
-                                    <span class="h-1 mt-2 w-10 bg-white lg:mb-3 mb-1 inline-block relative z-10"></span>
-                                </span>
-                                <span class="relative z-10">Подпишитесь на нас</span>
-                                <span class="absolute bg-[#e21e32] h-4 bottom-0  w-full block "></span>
-                            </h2>
-                        </div>
-                        <div class="flex lg:flex-row flex-col items-center lg:items-start mt-10 gap-4">
-                            <a href=""
-                                class="inline-block w-full lg:w-fit duration-200 hover:bg-[#e21e32] text-center    lg:py-3 py-2 font-bold px-14 border-2 text-white lg:text-xl  border-solid border-white">Перейти</a>
-                            <p class="text-white max-w-52 text-lg leading-5">Снимаем наши авто и рассказываем интересное
-                            </p>
-                        </div>
+                    <div class="grid grid-cols-2 gap-20 w-full">
+                        <div>
+                            <div class="pl-20">
+                                <div class="flex gap-5 items-start">
+                                    <h2 class="flex text-4xl   text-white relative flex-col items-start fontPTExtra">
+                                        <span class="flex items-center ">
+                                            <span class="inline-block mr-2 mb-3 ">Сдавайте свою машину в аренду и
+                                                зарабатывайте от</span>
+                                        </span>
+                                        <p class="text-5xl text-[#ffb800]">
+                                            360 000 ₽/мес.
+                                        </p>
 
+                                    </h2>
+                                </div>
+
+                            </div>
+                            <div class="flex mt-10 gap-4 px-20">
+                                <a href=""
+                                    class="inline-block whitespace-nowrap bg-[#141a15] border-none duration-200 hover:bg-[#54cc61] hover:text-white fontPTbook   py-4 px-6 border-2 text-[#54cc61]  font-light  ">Написать
+                                    в WhatsApp</a>
+                                <a href=""
+                                    class="inline-block  whitespace-nowrap bg-[#12181c] border-none duration-200 hover:bg-[#26a5e4] hover:text-white fontPTbook   py-4 px-6 border-2 text-[#26a5e4]  font-light  ">Написать
+                                    в Telegram</a>
+                                <a href=""
+                                    class="inline-block  whitespace-nowrap bg-[#1b121c] border-none duration-200 hover:bg-[#8156a1] hover:text-white fontPTbook   py-4 px-6 border-2 text-[#8156a1]  font-light  ">Написать
+                                    в Viber</a>
+
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="max-w-[480px]">
+                                <img class="relative z-10  object-contain"
+                                    src="https://i.pinimg.com/originals/a8/aa/3d/a8aa3d20ef6e0d4a7a20d234021c2f69.png"
+                                    class=" w-full" alt="">
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="relative">
-                        <div class="max-w-[480px]">
-                            <img class="relative z-10 object-contain"
-                                src="https://i.pinimg.com/originals/a8/aa/3d/a8aa3d20ef6e0d4a7a20d234021c2f69.png"
-                                class=" w-full" alt="">
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="text-white text-4xl font-bold my-12">Посмотрите пример вашего заработка:</h2>
+                <div class="grid grid-cols-3 gap-5">
+                    <div class="bg-[#222123] px-3 pb-3">
+                        <div class="flex items-center justify-center">
+                            <img class="w-full h-[350px] object-contain" src="/img/mersdes2.png" alt="">
                         </div>
-                        <img class="md:w-40 w-24 absolute -top-12 right-12" src="/img/youtube3d.png" alt="">
+                        <h2 class="text-white text-2xl font-bold">Mersedes C-class</h2>
+                        <p class="text-[#bdbdbd]">ваш автомобиль у нас в аренде</p>
+                        <div class="w-full h-[1px] bg-white my-3"></div>
+                        <p class="text-[#bdbdbd]">ваш доход в месяц</p>
+                        <span class="text-[#ffc500] text-lg block mt-2">315 000 ₽</span>
+                        <div class="w-full h-[1px] bg-white my-3"></div>
+                        <p class="text-[#bdbdbd]">ваш доход в год</p>
+                        <span class="text-[#fff] text-lg block mt-2">1 315 000 ₽</span>
+                    </div>
+                    <div class="bg-[#222123] px-3  pb-3">
+                        <div class="flex items-center justify-center">
+                            <img class="w-full h-[350px] object-contain  pt-5"
+                                src="https://mirfar.com/upload/iblock/2b0/2b0b761be53197c31f81abf0c892bbc0.png" alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-bold">Porsche Cayenne</h2>
+                        <p class="text-[#bdbdbd]">ваш автомобиль у нас в аренде</p>
+                        <div class="w-full h-[1px] bg-white my-3"></div>
+                        <p class="text-[#bdbdbd]">ваш доход в месяц</p>
+                        <span class="text-[#ffc500] text-lg block mt-2">315 000 ₽</span>
+                        <div class="w-full h-[1px] bg-white my-3"></div>
+                        <p class="text-[#bdbdbd]">ваш доход в год</p>
+                        <span class="text-[#fff] text-lg block mt-2">1 315 000 ₽</span>
+                    </div>
+                    <div class="bg-[#222123] px-3  pb-3">
+                        <div class="flex items-center justify-center">
+                            <img class="w-full h-[350px] object-contain"
+                                src="https://otvet.imgsmail.ru/download/90295725_7bc53162c43f49f3bef435cd390b7dbc_800.png"
+                                alt="">
+                        </div>
+                        <h2 class="text-white text-2xl font-bold ">BMW X5</h2>
+                        <p class="text-[#bdbdbd]">ваш автомобиль у нас в аренде</p>
+                        <div class="w-full h-[1px] bg-white my-3"></div>
+                        <p class="text-[#bdbdbd]">ваш доход в месяц</p>
+                        <span class="text-[#ffc500] text-lg block mt-2">315 000 ₽</span>
+                        <div class="w-full h-[1px] bg-white my-3"></div>
+                        <p class="text-[#bdbdbd]">ваш доход в год</p>
+                        <span class="text-[#fff] text-lg block mt-2">1 315 000 ₽</span>
+                    </div>
+                </div>
+                <button data-bs-toggle="modal" data-bs-target="#price-form"
+                    class="py-3 px-10 text-lg duration-200 hover:bg-[#181719] hover:text-white border border-white border-solid block text-white w-fit mx-auto mt-5">Рассчитать
+                    доход от своего авто</button>
+            </div>
+        </section>
+        <section class="text-white mt-24">
+            <div class="container">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Как это работает?</h2>
+                <div class="grid gap-6 md:grid-cols-3">
+                    <!-- Step 1 -->
+                    <div class="bg-[#222123] p-6 rounded-lg">
+                        <div
+                            class="flex items-center justify-center w-12 h-12 bg-[#2a292b] rounded-full mb-4 text-xl font-bold">
+                            1</div>
+                        <h3 class="text-xl font-bold mb-2">Заполняете условия</h3>
+                        <p class="text-gray-400">Вы указываете данные а/м и условия аренды: фотографии, минимальный
+                            стаж,
+                            стоимость и размер депозита</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="bg-[#222123] p-6 rounded-lg">
+                        <div
+                            class="flex items-center justify-center w-12 h-12 bg-[#2a292b] rounded-full mb-4 text-xl font-bold">
+                            2</div>
+                        <h3 class="text-xl font-bold mb-2">Получаете заявки</h3>
+                        <p class="text-gray-400">Мы размещаем Ваш авто на сайте и инстаграм, где принимаем заявки на
+                            него
+                        </p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="bg-[#222123] p-6 rounded-lg">
+                        <div
+                            class="flex items-center justify-center w-12 h-12 bg-[#2a292b] rounded-full mb-4 text-xl font-bold">
+                            3</div>
+                        <h3 class="text-xl font-bold mb-2">Зарабатываете деньги</h3>
+                        <p class="text-gray-400">Сдаете автомобиль в аренду и получаете деньги с началом аренды</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="lg:py-20 pt-20" data-aos="fade-down" data-aos-duration="500">
+        <section class="py-20 mt-10" data-aos="fade-down" data-aos-duration="500">
             <div class="container">
-                <div class="flex justify-between">
-                    <h2 class="text-white lg:text-4xl text-2xl font-bold mb-5">Спецпредложения</h2>
-                    <div class="special-offers__slider-btns flex lg:gap-5 md:gap-3 gap-2 pt-2 lg:pt-0">
-                        <div class="special-offers__slider-button-prev ">
-                            <img src="/img/arrow.svg" class="rotate-180 w-4 lg:w-[inherit]" alt="">
-                        </div>
-                        <div class="special-offers__slider-button-next ">
-                            <img src="/img/arrow.svg" class="w-4 lg:w-[inherit]" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper special-offers__slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="/img/offer1.jpg" data-fancybox="gallery" data-caption="СПЕЦПРЕДЛОЖЕНИЯ">
-                                <img src="/img/offer1.jpg" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="/img/offer1.jpg" data-fancybox="gallery" data-caption="СПЕЦПРЕДЛОЖЕНИЯ">
-                                <img src="/img/offer1.jpg" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="/img/offer1.jpg" data-fancybox="gallery" data-caption="СПЕЦПРЕДЛОЖЕНИЯ">
-                                <img src="/img/offer1.jpg" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="/img/offer1.jpg" data-fancybox="gallery" data-caption="СПЕЦПРЕДЛОЖЕНИЯ">
-                                <img src="/img/offer1.jpg" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="/img/offer1.jpg" data-fancybox="gallery" data-caption="СПЕЦПРЕДЛОЖЕНИЯ">
-                                <img src="/img/offer1.jpg" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="/img/offer1.jpg" data-fancybox="gallery" data-caption="СПЕЦПРЕДЛОЖЕНИЯ">
-                                <img src="/img/offer1.jpg" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="/img/offer1.jpg" data-fancybox="gallery" data-caption="СПЕЦПРЕДЛОЖЕНИЯ">
-                                <img src="/img/offer1.jpg" />
-                            </a>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-
-            </div>
-        </section>
-        <section class="py-20" data-aos="fade-down" data-aos-duration="500">
-            <div class="container">
-                <div class="grid lg:grid-cols-3 lg:gap-10 gap-3">
-                    <div class="border border-solid lg:py-10 py-5 border-[#2f2d31] hover:!shadow-none duration-300"
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 text-white">Наши преимущества</h2>
+                <div class="grid grid-cols-3 gap-10">
+                    <div class="border border-solid py-10 border-[#2f2d31] hover:!shadow-none duration-300"
                         style="box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
-                        <h2 class="text-white mb-3 lg:px-10 px-3 lg:text-xl">Более 50 эксклюзивных автомобилей в аренду
-                            из нашего
+                        <h2 class="text-white mb-3 px-10 text-xl">Более 50 эксклюзивных автомобилей в аренду из нашего
                             автопарка!</h2>
                         <div class="flex pr-5 justify-end">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -591,10 +356,9 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="border border-solid lg:py-10 py-5 border-[#2f2d31] hover:!shadow-none duration-300"
+                    <div class="border border-solid py-10 border-[#2f2d31] hover:!shadow-none duration-300"
                         style="box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
-                        <h2 class="text-white mb-3 lg:px-10 px-3 lg:text-xl">Доставка и прием автомобилей по Минску
-                            24/7!</h2>
+                        <h2 class="text-white mb-3 px-10 text-xl">Доставка и прием автомобилей по Минску 24/7!</h2>
                         <div class="flex pr-5 justify-end">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" x="0" y="0"
@@ -611,10 +375,9 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="border border-solid lg:py-10 py-5 border-[#2f2d31] hover:!shadow-none duration-300"
+                    <div class="border border-solid py-10 border-[#2f2d31] hover:!shadow-none duration-300"
                         style="box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
-                        <h2 class="text-white mb-3 lg:px-10 px-3 lg:text-xl">Гарантируем полную конфиденциальность: без
-                            видео- и
+                        <h2 class="text-white mb-3 px-10 text-xl">Гарантируем полную конфиденциальность: без видео- и
                             аудиозаписи в автомобиле.</h2>
                         <div class="flex pr-5 justify-end">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -634,9 +397,9 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="border border-solid lg:py-10 py-5 border-[#2f2d31] hover:!shadow-none duration-300"
+                    <div class="border border-solid py-10 border-[#2f2d31] hover:!shadow-none duration-300"
                         style="box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
-                        <h2 class="text-white mb-3 lg:px-10 px-3 lg:text-xl">Техническая поддержка 24/7.</h2>
+                        <h2 class="text-white mb-3 px-10 text-xl">Техническая поддержка 24/7.</h2>
                         <div class="flex pr-5 justify-end">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="47" x="0" y="0"
@@ -659,10 +422,9 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="border border-solid lg:py-10 py-5 border-[#2f2d31] hover:!shadow-none duration-300"
+                    <div class="border border-solid py-10 border-[#2f2d31] hover:!shadow-none duration-300"
                         style="box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
-                        <h2 class="text-white mb-3 lg:px-10 px-3 lg:text-xl">В стоимость включено страхование КАСКО и
-                            ОСАГО.</h2>
+                        <h2 class="text-white mb-3 px-10 text-xl">В стоимость включено страхование КАСКО и ОСАГО.</h2>
                         <div class="flex pr-5 justify-end">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" x="0" y="0"
@@ -679,10 +441,9 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="border border-solid lg:py-10 py-5 border-[#2f2d31] hover:!shadow-none duration-300"
+                    <div class="border border-solid py-10 border-[#2f2d31] hover:!shadow-none duration-300"
                         style="box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
-                        <h2 class="text-white mb-3 lg:px-10 px-3 lg:text-xl">Все автомобили оснащены премиальной
-                            комплектацией.
+                        <h2 class="text-white mb-3 px-10 text-xl">Все автомобили оснащены премиальной комплектацией.
                         </h2>
                         <div class="flex pr-5 justify-end">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -713,189 +474,166 @@
                 </div>
             </div>
         </section>
-        <section class="lg:py-20 pb-20" data-aos="fade-down" data-aos-duration="500">
-            <div class="container">
-                <div class="flex items-start justify-between ">
-                    <h2 class="text-white lg:text-4xl text-2xl font-bold mb-5">Наш инстаграм</h2>
-                    <img src="/img/instagram.png" class="object-contain w-10 lg:w-[inherit]" alt="">
+        <section class=" light-blue4 question-section">
+            <div class="container relative">
+                <h2 class="text-white text-center text-5xl">Часто задаваемые вопросы</h2>
+                <div class="relative z-40">
+                    <div class="question ">
+                        <div class="question-wrapper">
+                            <div class="accrodion-grp faq-accrodion" data-grp-name="faq-accrodion">
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="text-xl md:!text-2xl lg:!text-3xl !text-white ">
+                                            Страховой депозит
+                                        </h4>
+                                    </div>
+                                    <div class="accrodion-content" style="display: none;">
+
+                                        <h5 class="md:text-2xl font !text-white !font-light !not-italic leading-[1]"><b>
+                                                Для аренды автомобиля требуется внесение возвратного страхового
+                                                депозита, размер которого зависит от выбранного автомобиля, а также
+                                                стажа вождения и гражданства арендатора. Минимальный размер депозита
+                                                50.000 рублей
+                                            </b></h5>
+                                    </div>
+                                </div>
+
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="text-xl md:!text-2xl lg:!text-3xl !text-white ">
+                                            Иностранные граждане
+                                        </h4>
+                                    </div>
+                                    <div class="accrodion-content" style="display: none">
+
+                                        <p class="md:text-2xl font !text-white !font-light !not-italic leading-[1]"><b>
+                                                Мы предоставляем услугу аренды автомобиля иностранным гражданам. Размер
+                                                страхового депозита может быть увеличен. </p>
+                                    </div>
+                                </div>
+
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="text-xl md:!text-2xl lg:!text-3xl !text-white ">
+                                            Доставка/забор автомобиля
+                                        </h4>
+                                    </div>
+                                    <div class="accrodion-content" style="display: none">
+
+                                        <h5 class="md:text-2xl font !text-white !font-light !not-italic leading-[1]"><b>
+                                                Мы можем доставить или забрать автомобиль в любое удобное для вас место
+                                                за дополнительную плату, в зависимости от местоположения и выбранного
+                                                автомобиля. </p>
+                                    </div>
+                                </div>
+
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="text-xl md:!text-2xl lg:!text-3xl !text-white ">
+                                            Территория использования
+                                        </h4>
+                                    </div>
+                                    <div class="accrodion-content" style="display: none">
+
+                                        <h5 class="md:text-2xl font !text-white !font-light !not-italic leading-[1]"><b>
+                                                Аренда автомобиля предоставляется на территории Минска. Выезд за пределы
+                                                разрешенной территории допустим, но оговаривается в индивидуальном
+                                                порядке.
+                                            </b></h5>
+                                    </div>
+                                </div>
+
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="text-xl md:!text-2xl lg:!text-3xl !text-white ">
+                                            Дополнительные расходы
+                                        </h4>
+                                    </div>
+                                    <div class="accrodion-content" style="display: none">
+
+                                        <h5 class="md:text-2xl font !text-white !font-light !not-italic leading-[1]"><b>
+                                                Арендатор отвечает материально за все сопутствующие расходы во время
+                                                использования автомобиля, включая оплату городской парковки и штрафов за
+                                                нарушение ПДД.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="text-xl md:!text-2xl lg:!text-3xl !text-white ">
+                                            Бронирование автомобиля
+                                        </h4>
+                                    </div>
+                                    <div class="accrodion-content" style="display: none">
+
+                                        <h5 class="md:text-2xl font !text-white !font-light !not-italic leading-[1]"><b>
+                                                Для резерва автомобиля на определённую дату необходимо внести предоплату
+                                                в размере 50% от стоимости.</h5>
+                                    </div>
+                                </div>
+
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4 class="text-xl md:!text-2xl lg:!text-3xl !text-white ">
+                                            ЗАПРЕЩЕНО:
+                                        </h4>
+                                    </div>
+                                    <div class="accrodion-content" style="display: none">
+
+                                        <h5 class="md:text-2xl font !text-white !font-light !not-italic leading-[1]"><b>
+                                                <p>
+                                                    1. Передавать управление автомобилем третьему лицу, не внесенному в
+                                                    договор
+                                                </p>
+                                                <p>
+                                                    2. Использование автомобиля для криминальных целей (мошенничество,
+                                                    контрабанда, перевозка наркотиков)
+                                                </p>
+                                                <p>
+                                                    3. Использование автомобиля для извлечения прибыли
+                                                </p>
+                                                <p>
+                                                    4. Нарушение установленных скоростных ограничений
+                                                </p>
+                                                <br>
+                                                <p>
+                                                    В случае выявления любого из данных нарушений, автомобиль может быть
+                                                    принудительно изъят, без возмещения уплаченных средств и страхового
+                                                    депозита.
+                                                </p>
+                                        </h5>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="grid  md:grid-cols-4 gap-[10px]">
-                    <a href="">
-                        <img style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;"
-                            class="max-h-[300px] w-full object-cover"
-                            src="https://s-insta.tildacdn.com/2f259201f4ab543312679533e468027b/cd09afb61a1a7946aac0de3ee5437320.jpg"
-                            alt="">
-                    </a>
 
-                    <a href="">
-                        <img style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;"
-                            class="max-h-[300px] w-full object-cover"
-                            src="https://s-insta.tildacdn.com/2f259201f4ab543312679533e468027b/cd09afb61a1a7946aac0de3ee5437320.jpg"
-                            alt="">
-                    </a>
+                <img class="absolute top-[-50px] -left-[1%] w-[50px] md:w-[90px]"
+                    src="./ya_gercules_front/assets/img/white_snow.svg" alt="">
 
-                    <a href="">
-                        <img style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;"
-                            class="max-h-[300px] w-full object-cover"
-                            src="https://s-insta.tildacdn.com/2f259201f4ab543312679533e468027b/cd09afb61a1a7946aac0de3ee5437320.jpg"
-                            alt="">
-                    </a>
+                <img class="absolute top-4 -right-[5%] w-[50px] md:w-[110px]"
+                    src="./ya_gercules_front/assets/img/white_snow.svg" alt="">
 
-                    <a href="">
-                        <img style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;"
-                            class="max-h-[300px] w-full object-cover"
-                            src="https://s-insta.tildacdn.com/2f259201f4ab543312679533e468027b/cd09afb61a1a7946aac0de3ee5437320.jpg"
-                            alt="">
-                    </a> <a href="">
-                        <img style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;"
-                            class="max-h-[300px] w-full object-cover"
-                            src="https://s-insta.tildacdn.com/2f259201f4ab543312679533e468027b/cd09afb61a1a7946aac0de3ee5437320.jpg"
-                            alt="">
-                    </a>
-
-                    <a href="">
-                        <img style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;"
-                            class="max-h-[300px] w-full object-cover"
-                            src="https://s-insta.tildacdn.com/2f259201f4ab543312679533e468027b/cd09afb61a1a7946aac0de3ee5437320.jpg"
-                            alt="">
-                    </a>
-
-                    <a href="">
-                        <img style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;"
-                            class="max-h-[300px] w-full object-cover"
-                            src="https://s-insta.tildacdn.com/2f259201f4ab543312679533e468027b/cd09afb61a1a7946aac0de3ee5437320.jpg"
-                            alt="">
-                    </a>
-
-                    <a href="">
-                        <img style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;"
-                            class="max-h-[300px] w-full object-cover"
-                            src="https://s-insta.tildacdn.com/2f259201f4ab543312679533e468027b/cd09afb61a1a7946aac0de3ee5437320.jpg"
-                            alt="">
-                    </a>
-                </div>
+                <img class="absolute bottom-[0%] -right-[5%] w-[50px] md:w-[110px]"
+                    src="./ya_gercules_front/assets/img/white_snow.svg" alt="">
+                <img class="absolute bottom-[30%] -left-[7%] w-[50px] md:w-[90px]"
+                    src="./ya_gercules_front/assets/img/white_snow.svg" alt="">
             </div>
         </section>
         <section data-aos="fade-down" data-aos-duration="500">
             <div class="container !max-w-[1250px]">
-                <div class="bg-[#111111] pt-24 pb-10 lg:grid flex items-center flex-col-reverse grid-cols-2 relative"
+                <div class="bg-[#111111] pt-24 pb-10 relative"
                     style="box-shadow: #111111 0px 0.0625em 0.0625em, #111111 0px 0.125em 0.5em, #111111 0px 0px 0px 1px inset;">
-                    <img class="hidden lg:block absolute top-5 left-5" src="/img/left-corner.svg" alt="">
-                    <img class="hidden lg:block  absolute bottom-5 right-5" src="/img/right-corner.svg" alt="">
+                    <img class="absolute top-5 left-5" src="/img/left-corner.svg" alt="">
+                    <img class="absolute bottom-5 right-5" src="/img/right-corner.svg" alt="">
 
-                    <div class="lg:pl-20">
-                        <div class="flex gap-3 items-start">
-                            <img class="w-10 lg:block hidden" src="/img/inst.svg" alt="">
-                            <h2 class="flex lg:text-4xl md:text-3xl text-2xl  text-white relative flex-col fontPTExtra">
-                                <span class="flex items-center ">
-                                    <span class="inline-block mr-2 mb-3 ">Наш инстаграм</span>
-                                    <span class="h-1 mt-2 w-10 bg-white mb-3 inline-block relative z-10"></span>
-                                </span>
-                                <span class="relative z-10">Подпишитесь на нас</span>
-                                <span class="absolute bg-[#ef4175] h-4 bottom-0  w-full block "></span>
-                            </h2>
-                        </div>
-                        <div class="flex lg:flex-row flex-col items-center lg:items-start mt-10 gap-4">
-                            <a href=""
-                                class="inline-block duration-200 hover:bg-[#ef4175]    py-3 font-bold px-14 border-2 text-white text-xl  border-solid border-white">Перейти</a>
-                            <p class="text-white max-w-52 text-lg leading-5">Снимаем наши авто и рассказываем интересное
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="relative">
-                        <div class="max-w-[480px]">
-                            <img class="relative z-10 object-contain"
-                                src="https://i.pinimg.com/originals/a8/aa/3d/a8aa3d20ef6e0d4a7a20d234021c2f69.png"
-                                class=" w-full" alt="">
-                        </div>
-                        <img class="md:w-40 w-24 absolute -top-12 right-12"
-                            src="https://static.tildacdn.com/tild3636-3330-4038-b231-633564323733/logo-Instagram-3d-ic.png"
-                            alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-20" data-aos="fade-down" data-aos-duration="500">
-            <div class="container">
-                <div class="flex justify-between items-end">
-                    <h2 class="text-white lg:text-4xl text-2xl font-bold ">Премиум автомобили для мероприятий</h2>
-                    <img src="/img/podarok.png" class="lg:block hidden object-contain" alt="">
-                </div>
-                <div class="mt-10">
-                    <div class="p-10 flex flex-col gap-24 justify-start items-start"
-                        style="background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url('https://i.pinimg.com/originals/c3/19/26/c319262bd9533b867888d11e4a7ab172.jpg') center/cover;">
-                        <div class="flex flex-col gap-24 items-start">
-                            <h2 class="text-white text-3xl max-w-80">Аренда премиум автомобилей на свадьбу</h2>
-                            <a href=""
-                                class="text-white text-2xl border-b-2 relative inline-block border-solid border-white pb-[2px]">
-                                <span>Подробнее</span>
-                                <img src="/img/arrow-fill-small.svg"
-                                    class="absolute w-2 -right-6 top-1/2 -translate-y-1/2" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-10">
-                    <div class="p-10 flex flex-col gap-24 justify-start items-end"
-                        style="background: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url('https://optim.tildacdn.com/tild3539-3465-4534-a337-383166616465/-/format/webp/A79A1376-1234.jpg') center/cover;">
-                        <div class="flex flex-col gap-24 items-start">
-                            <h2 class="text-white text-3xl max-w-80">Аренда премиум автомобилей на день рождения</h2>
-                            <a href=""
-                                class="text-white text-2xl border-b-2 relative inline-block border-solid border-white pb-[2px]">
-                                <span>Подробнее</span>
-                                <img src="/img/arrow-fill-small.svg"
-                                    class="absolute w-2 -right-6 top-1/2 -translate-y-1/2" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-10">
-                    <div class="p-10 flex flex-col gap-24 justify-start items-start"
-                        style="background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url('https://optim.tildacdn.com/tild3030-3031-4436-b739-356232646430/-/format/webp/A79A3317.jpg') center/cover;">
-                        <div class="flex flex-col gap-24 items-start">
-                            <h2 class="text-white text-3xl max-w-80">Аренда премиум автомобилей для фотосессии</h2>
-                            <a href=""
-                                class="text-white text-2xl border-b-2 relative inline-block border-solid border-white pb-[2px]">
-                                <span>Подробнее</span>
-                                <img src="/img/arrow-fill-small.svg"
-                                    class="absolute w-2 -right-6 top-1/2 -translate-y-1/2" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-10">
-                    <div class="p-10 flex flex-col gap-24 justify-start items-end"
-                        style="background: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url('https://avatars.mds.yandex.net/i?id=5d4d4750d79a5e3e057f4785f2a1ce3c_l-9182309-images-thumbs&n=13') center/cover;">
-                        <div class="flex flex-col gap-24 items-start">
-                            <h2 class="text-white text-3xl max-w-80">Аренда премиум автомобилей для видеосъемки</h2>
-                            <a href=""
-                                class="text-white text-2xl border-b-2 relative inline-block border-solid border-white pb-[2px]">
-                                <span>Подробнее</span>
-                                <img src="/img/arrow-fill-small.svg"
-                                    class="absolute w-2 -right-6 top-1/2 -translate-y-1/2" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-        </section>
-
-        <section data-aos="fade-down" data-aos-duration="500">
-            <div class="container !max-w-[1250px]">
-                <div class="bg-[#111111] lg:pt-24 pt-12 pb-10 relative"
-                    style="box-shadow: #111111 0px 0.0625em 0.0625em, #111111 0px 0.125em 0.5em, #111111 0px 0px 0px 1px inset;">
-                    <img class="hidden lg:block absolute top-5 left-5" src="/img/left-corner.svg" alt="">
-                    <img class="hidden lg:block  absolute bottom-5 right-5" src="/img/right-corner.svg" alt="">
-        
-
-                    <div class="lg:grid flex flex-col-reverse items-center grid-cols-2 lg:gap-20 gap-10 w-full">
-                        <div class="w-full">
-                            <div class="lg:pl-20 px-5 lg:px-0">
+                    <div class="grid grid-cols-2 gap-20 w-full">
+                        <div>
+                            <div class="pl-20">
                                 <div class="flex gap-5 items-start">
                                     <h2 class="flex text-4xl   text-white relative flex-col items-start fontPTExtra">
                                         <span class="flex items-center ">
@@ -912,7 +650,7 @@
                                 </div>
 
                             </div>
-                            <div class="flex flex-col lg:flex-row mt-10 gap-4 lg:px-20 px-5">
+                            <div class="flex mt-10 gap-4 px-20">
                                 <a href=""
                                     class="inline-block whitespace-nowrap bg-[#141a15] border-none duration-200 hover:bg-[#54cc61] hover:text-white fontPTbook   py-4 px-6 border-2 text-[#54cc61]  font-light  ">Написать
                                     в WhatsApp</a>
@@ -938,9 +676,12 @@
                 </div>
             </div>
         </section>
+
+
+
     </main>
 
-    <footer style="background: rgb(24, 23, 25);" class="mt-10 lg:py-20 py-10">
+    <footer style="background: rgb(24, 23, 25);" class="mt-10 py-20">
         <div class="container grid sm:grid-cols-2  lg:grid-cols-4 gap-6 py-10 items-start">
             <div class="flex flex-col space-y-1 lg:pt-4 text-white">
                 <h3 class=" font-bold leading-[15.6px] text-2xl mb-3">
@@ -1094,7 +835,7 @@
                             class="text-balticSea transition-custom hover:text-fern-600 text-sm leading-[16.8px] font-medium font-montserrat">Viber</a>
                     </li>
                 </ul>
-                <div class="flex flex-col gap-y-3 mt-10 mb-3 lg:mb-0">
+                <div class="flex flex-col gap-y-3 mt-10">
                     <h3 lass="text-balticSea font-medium font-montserrat leading-[15.6px] text-sm mb-3">
                         Мы в соц.сетях:
                     </h3>
