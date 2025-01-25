@@ -1,0 +1,1574 @@
+{
+    "Sheet1": [
+        {
+            "#well intervention": "#intervention",
+            "#cement job": "#cement plug",
+            "Drill Bit": "Tricone Bit",
+            "Gravel Pack": "Gravel Pack Screen"
+        },
+        {
+            "#well intervention": "#well integrity",
+            "#cement job": "#top drive",
+            "Drill Bit": "PDC Bit",
+            "Gravel Pack": "Sand Control Screen"
+        },
+        {
+            "#well intervention": "#workover",
+            "#cement job": "#power swivel",
+            "Drill Bit": "Drill Pipe",
+            "Gravel Pack": "Expandable Screen"
+        },
+        {
+            "#well intervention": "#wellservice",
+            "#cement job": "#power pack",
+            "Drill Bit": "Kelly",
+            "Gravel Pack": "Sliding Sleeve"
+        },
+        {
+            "#well intervention": "#logging",
+            "#cement job": "#hydraulic unit",
+            "Drill Bit": "Rotary Table",
+            "Gravel Pack": "Acidizing Tools"
+        },
+        {
+            "#well intervention": "#geophysics",
+            "#cement job": "#artificial lift",
+            "Drill Bit": "Top Drive",
+            "Gravel Pack": "Frac Plug"
+        },
+        {
+            "#well intervention": "#fluid level",
+            "#cement job": "#PCP",
+            "Drill Bit": "Mud Motor",
+            "Gravel Pack": "Frac Ball"
+        },
+        {
+            "#well intervention": "#fluid shot",
+            "#cement job": "#Insert pump",
+            "Drill Bit": "Drill Collar",
+            "Gravel Pack": "Frac Sleeve"
+        },
+        {
+            "#well intervention": "# fluid level measurement",
+            "#cement job": "#ESP",
+            "Drill Bit": "Stabilizer",
+            "Gravel Pack": "Crosslinker"
+        },
+        {
+            "#well intervention": "#static well",
+            "#cement job": "#screw pump",
+            "Drill Bit": "Reamer",
+            "Gravel Pack": "Proppant Blender"
+        },
+        {
+            "#well intervention": "# dynamic well",
+            "#cement job": "#sidetrack",
+            "Drill Bit": "Shale Shaker",
+            "Gravel Pack": "Wellbore Cleanout Tools"
+        },
+        {
+            "#well intervention": "#fishing job",
+            "#cement job": "#submersible pump",
+            "Drill Bit": "Mud Pump",
+            "Gravel Pack": "Expandable Packer"
+        },
+        {
+            "#well intervention": "#pipe recovery",
+            "#cement job": "#centrifugal pump",
+            "Drill Bit": "Mud Tank",
+            "Gravel Pack": "Hammer"
+        },
+        {
+            "#well intervention": "#tool recovery",
+            "#cement job": "#power tongs",
+            "Drill Bit": "Blowout Preventer (BOP)",
+            "Gravel Pack": "Wrench"
+        },
+        {
+            "#well intervention": "#downhole tools",
+            "#cement job": "#power tong brake band",
+            "Drill Bit": "Annular Preventer",
+            "Gravel Pack": "Pipe Wrench"
+        },
+        {
+            "#well intervention": "#packer",
+            "#cement job": "#power tong dies",
+            "Drill Bit": "Ram Preventer",
+            "Gravel Pack": "Torque Wrench"
+        },
+        {
+            "#well intervention": "#scrapper",
+            "#cement job": "#milling",
+            "Drill Bit": "Drill Stem",
+            "Gravel Pack": "Thread Protectors"
+        },
+        {
+            "#well intervention": "#wr bridge plug",
+            "#cement job": "#mills",
+            "Drill Bit": "Drill String",
+            "Gravel Pack": "Gaskets"
+        },
+        {
+            "#well intervention": "#bridge plug",
+            "#cement job": "#flat bottom mills",
+            "Drill Bit": "Vibration Dampener",
+            "Gravel Pack": "O-Rings"
+        },
+        {
+            "#well intervention": "#cement retainer",
+            "#cement job": "#washover pipe",
+            "Drill Bit": "Float Shoe",
+            "Gravel Pack": "Anti-Seize Compound"
+        },
+        {
+            "#well intervention": "#oilservices",
+            "#cement job": "#drill pipe",
+            "Drill Bit": "Float Collar",
+            "Gravel Pack": "Pipe Dope"
+        },
+        {
+            "#well intervention": "#cement job",
+            "#cement job": "#drill collar",
+            "Drill Bit": "Cement Basket",
+            "Gravel Pack": "Drift Tool"
+        },
+        {
+            "#well intervention": "#cement plug",
+            "#cement job": "#pipe elevator",
+            "Drill Bit": "Centralizer",
+            "Gravel Pack": "Seal Rings"
+        },
+        {
+            "#well intervention": "#top drive",
+            "#cement job": "#slips",
+            "Drill Bit": "Guide Shoe",
+            "Gravel Pack": "Adapter Sub"
+        },
+        {
+            "#well intervention": "#power swivel",
+            "#cement job": "#hydraulic slips",
+            "Drill Bit": "Logging While Drilling (LWD)",
+            "Gravel Pack": "Cable Clamp"
+        },
+        {
+            "#well intervention": "#power pack",
+            "#cement job": "#packer redress kit",
+            "Drill Bit": "Measurement While Drilling (MWD)",
+            "Gravel Pack": "Wire Brush"
+        },
+        {
+            "#well intervention": "#hydraulic unit",
+            "#cement job": "#wr plug redress kit",
+            "Drill Bit": "Torque Sub",
+            "Gravel Pack": "Thread Seal Tape"
+        },
+        {
+            "#well intervention": "#artificial lift",
+            "#cement job": "#hydraulic setting tool",
+            "Drill Bit": "Slips",
+            "Gravel Pack": "Hose Fittings"
+        },
+        {
+            "#well intervention": "#PCP",
+            "#cement job": "#hydraulic setting tool redress kit",
+            "Drill Bit": "Spiders",
+            "Gravel Pack": "Flange Bolts"
+        },
+        {
+            "#well intervention": "#Insert pump",
+            "#cement job": "#hydraulic jacks",
+            "Drill Bit": "Tubing Tong",
+            "Gravel Pack": "Blind Flange"
+        },
+        {
+            "#well intervention": "#ESP",
+            "#cement job": "#ball valve",
+            "Drill Bit": "Hydraulic Tong",
+            "Gravel Pack": "Drilling Mud"
+        },
+        {
+            "#well intervention": "#screw pump",
+            "#cement job": "#gate valve",
+            "Drill Bit": "Tubing Hanger",
+            "Gravel Pack": "Completion Fluid"
+        },
+        {
+            "#well intervention": "#sidetrack",
+            "#cement job": "#butterfly valve",
+            "Drill Bit": "Packers",
+            "Gravel Pack": "Brine"
+        },
+        {
+            "#well intervention": "#submersible pump",
+            "#cement job": "#double block and bleed valves",
+            "Drill Bit": "Bridge Plug",
+            "Gravel Pack": "KCl Solution"
+        },
+        {
+            "#well intervention": "#centrifugal pump",
+            "#cement job": "#washover shoe",
+            "Drill Bit": "Retrievable Plug",
+            "Gravel Pack": "Mud Additives"
+        },
+        {
+            "#well intervention": "#power tongs",
+            "#cement job": "#perforators",
+            "Drill Bit": "Cement Retainer",
+            "Gravel Pack": "Lost Circulation Material (LCM)"
+        },
+        {
+            "#well intervention": "#power tong brake band",
+            "#cement job": "#swivels",
+            "Drill Bit": "Circulating Valve",
+            "Gravel Pack": "Corrosion Inhibitor"
+        },
+        {
+            "#well intervention": "#power tong dies",
+            "#cement job": "#pulling unit parts",
+            "Drill Bit": "Isolation Valve",
+            "Gravel Pack": "Scale Inhibitor"
+        },
+        {
+            "#well intervention": "#milling",
+            "#cement job": "#pipe wrenches",
+            "Drill Bit": "Wireline",
+            "Gravel Pack": "Biocide"
+        },
+        {
+            "#well intervention": "#mills",
+            "#cement job": "#surface tools",
+            "Drill Bit": "Slickline",
+            "Gravel Pack": "Acid Blend"
+        },
+        {
+            "#well intervention": "#flat bottom mills",
+            "#cement job": "#cementing manifold",
+            "Drill Bit": "Coiled Tubing",
+            "Gravel Pack": "Spacer Fluid"
+        },
+        {
+            "#well intervention": "#washover pipe",
+            "#cement job": "#tanks",
+            "Drill Bit": "Fishing Tool",
+            "Gravel Pack": "Friction Reducer"
+        },
+        {
+            "#well intervention": "#drill pipe",
+            "#cement job": "#aggitators for cement",
+            "Drill Bit": "Impression Block",
+            "Gravel Pack": "Fluid Loss Additive"
+        },
+        {
+            "#well intervention": "#drill collar",
+            "#cement job": "#high pressure hoses",
+            "Drill Bit": "Jars",
+            "Gravel Pack": "Viscosity Modifier"
+        },
+        {
+            "#well intervention": "#pipe elevator",
+            "#cement job": "#hose",
+            "Drill Bit": "Overshot",
+            "Gravel Pack": "Surfactant"
+        },
+        {
+            "#well intervention": "#slips",
+            "#cement job": "#gauge",
+            "Drill Bit": "Spear",
+            "Gravel Pack": "Cementing"
+        },
+        {
+            "#well intervention": "#hydraulic slips",
+            "#cement job": "#gauge high presssure",
+            "Drill Bit": "Tubing Cutter",
+            "Gravel Pack": "Perforation"
+        },
+        {
+            "#well intervention": "#packer redress kit",
+            "#cement job": "#hydraulic fittings",
+            "Drill Bit": "Wireline Cutter",
+            "Gravel Pack": "Acidizing"
+        },
+        {
+            "#well intervention": "#wr plug redress kit",
+            "#cement job": "#well controll pannel",
+            "Drill Bit": "Stuffing Box",
+            "Gravel Pack": "Hydraulic Fracturing"
+        },
+        {
+            "#well intervention": "#hydraulic setting tool",
+            "#cement job": "#CompletionTool",
+            "Drill Bit": "Swab Cups",
+            "Gravel Pack": "Gravel Packing"
+        },
+        {
+            "#well intervention": "#hydraulic setting tool redress kit",
+            "#cement job": "#solidscontrol",
+            "Drill Bit": "Swabbing Tool",
+            "Gravel Pack": "Well Testing"
+        },
+        {
+            "#well intervention": "#hydraulic jacks",
+            "#cement job": "#solidspump",
+            "Drill Bit": "Hydraulic Workover Unit",
+            "Gravel Pack": "Flowback Operations"
+        },
+        {
+            "#well intervention": "#ball valve",
+            "#cement job": "#slurrypumps",
+            "Drill Bit": "Snubbing Unit",
+            "Gravel Pack": "Stimulation"
+        },
+        {
+            "#well intervention": "#gate valve",
+            "#cement job": "#batchtreating",
+            "Drill Bit": "Lifting Sub",
+            "Gravel Pack": "Wellbore Cleanup"
+        },
+        {
+            "#well intervention": "#butterfly valve",
+            "#cement job": "#acidizing",
+            "Drill Bit": "Sand Bailer",
+            "Gravel Pack": "Plug and Abandonment (P&A)"
+        },
+        {
+            "#well intervention": "#double block and bleed valves",
+            "#cement job": "#torque",
+            "Drill Bit": "Debris Basket",
+            "Gravel Pack": "Fishing Operations"
+        },
+        {
+            "#well intervention": "#washover shoe",
+            "#cement job": "#test",
+            "Drill Bit": "Acidizing Tools",
+            "Gravel Pack": "Milling Operations"
+        },
+        {
+            "#well intervention": "#perforators",
+            "#cement job": "#downhole fishing",
+            "Drill Bit": "Setting Tool",
+            "Gravel Pack": "Leak Testing"
+        },
+        {
+            "#well intervention": "#swivels",
+            "#cement job": "#ESP",
+            "Drill Bit": "Tubing Anchor",
+            "Gravel Pack": "Pressure Testing"
+        },
+        {
+            "#well intervention": "#pulling unit parts",
+            "#cement job": "#PCP",
+            "Drill Bit": "Back Pressure Valve",
+            "Gravel Pack": "Tubing Retrieval"
+        },
+        {
+            "#well intervention": "#pipe wrenches",
+            "#cement job": "#Well Integrity",
+            "Drill Bit": "Blowout Preventer (BOP)",
+            "Gravel Pack": "Zonal Isolation"
+        },
+        {
+            "#well intervention": "#surface tools",
+            "#cement job": "#gas lift surveillance",
+            "Drill Bit": "Lubricator",
+            "Gravel Pack": "Sand Control"
+        },
+        {
+            "#well intervention": "#cementing manifold",
+            "#cement job": "#Acoustic logging",
+            "Drill Bit": "Polished Bore Receptacle (PBR)",
+            "Gravel Pack": "Reservoir Monitoring"
+        },
+        {
+            "#well intervention": "#tanks",
+            "#cement job": "#Online Gas Composition",
+            "Drill Bit": "Expansion Joint",
+            "Gravel Pack": "Exploration"
+        },
+        {
+            "#well intervention": "#aggitators for cement",
+            "#cement job": "#Direct Leak Metering",
+            "Drill Bit": "Landing Nipple",
+            "Gravel Pack": "Drilling"
+        },
+        {
+            "#well intervention": "#high pressure hoses",
+            "#cement job": "#Well Barrier Surveillance",
+            "Drill Bit": "Perforating Gun",
+            "Gravel Pack": "Completion"
+        },
+        {
+            "#well intervention": "#hose",
+            "#cement job": "#Gas Lift Surveillance",
+            "Drill Bit": "Shaped Charge",
+            "Gravel Pack": "Production"
+        },
+        {
+            "#well intervention": "#gauge",
+            "#cement job": "#Wireless Monitoring",
+            "Drill Bit": "TCP (Tubing Conveyed Perforation)",
+            "Gravel Pack": "Intervention"
+        },
+        {
+            "#well intervention": "#gauge high presssure",
+            "#cement job": "#Analysis",
+            "Drill Bit": "Memory Gauge",
+            "Gravel Pack": "Reservoir"
+        },
+        {
+            "#well intervention": "#hydraulic fittings",
+            "#cement job": "#Calibration",
+            "Drill Bit": "Pressure Gauge",
+            "Gravel Pack": "Wellbore"
+        },
+        {
+            "#well intervention": "#well controll pannel",
+            "#cement job": "#Risk assessment",
+            "Drill Bit": "Temperature Gauge",
+            "Gravel Pack": "Formation"
+        },
+        {
+            "#well intervention": "#",
+            "#cement job": "#sustained casing pressure",
+            "Drill Bit": "Distributed Temperature Sensing (DTS)",
+            "Gravel Pack": "Fracturing"
+        },
+        {
+            "#cement job": "General Oilfield Services",
+            "Drill Bit": "Distributed Acoustic Sensing (DAS)",
+            "Gravel Pack": "Stimulation"
+        },
+        {
+            "#well intervention": "#Progressing Cavity Pump (PCP) Equipment",
+            "#cement job": "Oilfield Services",
+            "Drill Bit": "Downhole Camera",
+            "Gravel Pack": "Perforation"
+        },
+        {
+            "#well intervention": "#Plunger Lift Equipment",
+            "#cement job": "Oil and Gas Solutions",
+            "Drill Bit": "Tractor Tool",
+            "Gravel Pack": "Artificial Lift"
+        },
+        {
+            "#well intervention": "#Jet Pump Equipment",
+            "#cement job": "Exploration and Production",
+            "Drill Bit": "Logging Tools",
+            "Gravel Pack": "Sand Control"
+        },
+        {
+            "#well intervention": "#Hydraulic Lift Equipment",
+            "#cement job": "Well Intervention Services",
+            "Drill Bit": "Gamma Ray Tool",
+            "Gravel Pack": "Drill Bit"
+        },
+        {
+            "#well intervention": "#Common Artificial Lift Accessories",
+            "#cement job": "Drilling Support Services",
+            "Drill Bit": "Neutron Tool",
+            "Gravel Pack": "Drill Pipe"
+        },
+        {
+            "#well intervention": "#Artificial Lift Fluids and Chemicals",
+            "#cement job": "Completion Services",
+            "Drill Bit": "Resistivity Tool",
+            "Gravel Pack": "Drill Collar"
+        },
+        {
+            "#well intervention": "#Processes and Optimization Techniques",
+            "#cement job": "Production Optimization",
+            "Drill Bit": "Caliper Log",
+            "Gravel Pack": "Mud Motor"
+        },
+        {
+            "#well intervention": "#Downhole Tools",
+            "#cement job": "Reservoir Management",
+            "Drill Bit": "Cement Bond Log (CBL)",
+            "Gravel Pack": "Rotary Table"
+        },
+        {
+            "#well intervention": "#Wireline Tools",
+            "#cement job": "Wireline Services",
+            "Drill Bit": "Production Logging Tool (PLT)",
+            "Gravel Pack": "Top Drive"
+        },
+        {
+            "#well intervention": "#Production and Artificial Lift",
+            "#cement job": "Wireline Logging",
+            "Drill Bit": "Sonic Log",
+            "Gravel Pack": "Casing"
+        },
+        {
+            "#well intervention": "#Hydraulic Fracturing and Stimulation",
+            "#cement job": "Openhole Logging",
+            "Drill Bit": "Pipe Recovery Tool",
+            "Gravel Pack": "Casing Hanger"
+        },
+        {
+            "#well intervention": "#Measurement and Monitoring",
+            "#cement job": "Cased Hole Logging",
+            "Drill Bit": "Well Tractor",
+            "Gravel Pack": "Cementing Plug"
+        },
+        {
+            "#well intervention": "#Subsea and Offshore",
+            "#cement job": "Perforation Services",
+            "Drill Bit": "Hydraulic Jar",
+            "Gravel Pack": "Blowout Preventer (BOP)"
+        },
+        {
+            "#well intervention": "#Workover and Well Service Operations",
+            "#cement job": "Pipe Recovery",
+            "Drill Bit": "Fishing Magnet",
+            "Gravel Pack": "Annulus"
+        },
+        {
+            "#well intervention": "#Drilling Operations",
+            "#cement job": "Plug Setting",
+            "Drill Bit": "Milling Tool",
+            "Gravel Pack": "Mud Pump"
+        },
+        {
+            "#well intervention": "#Production Operations",
+            "#cement job": "Well Integrity Testing",
+            "Drill Bit": "Washover Tool",
+            "Gravel Pack": "Shale Shaker"
+        },
+        {
+            "#well intervention": "#Gas Lift Equipment and Components",
+            "#cement job": "Data Acquisition",
+            "Drill Bit": "Leak Detection Tool",
+            "Gravel Pack": "Packers"
+        },
+        {
+            "#well intervention": "#Electrical Submersible Pump (ESP) Equipment",
+            "#cement job": "Downhole Tools and Services",
+            "Drill Bit": "Corrosion Probe",
+            "Gravel Pack": "Bridge Plugs"
+        },
+        {
+            "#well intervention": "#Sucker Rod Pump (Beam Pump) Equipment",
+            "#cement job": "Packers and Bridge Plugs",
+            "Drill Bit": "Pressure Testing Equipment",
+            "Gravel Pack": "Liner Hanger"
+        },
+        {
+            "#well intervention": "#Drilling Equipment and Tools",
+            "#cement job": "Liner Hangers",
+            "Drill Bit": "Isolation Packers",
+            "Gravel Pack": "Centralizers"
+        },
+        {
+            "#well intervention": "#Well Service and Workover Tools",
+            "#cement job": "Flow Control Systems",
+            "Drill Bit": "Cement Evaluation Tool",
+            "Gravel Pack": "Float Collar"
+        },
+        {
+            "#well intervention": "#Well Intervention Tools",
+            "#cement job": "Wellbore Cleanout Tools",
+            "Drill Bit": "Acoustic Logging Tools",
+            "Gravel Pack": "Float Shoe"
+        },
+        {
+            "#well intervention": "#Well Integrity Services",
+            "#cement job": "Fishing Tools",
+            "Drill Bit": "Radial Bond Log",
+            "Gravel Pack": "Flow Control Valve"
+        },
+        {
+            "#well intervention": "#Pressure Control and Barrier Equipment",
+            "#cement job": "Downhole Tractor Services",
+            "Drill Bit": "Temperature Log",
+            "Gravel Pack": "Safety Valve"
+        },
+        {
+            "#well intervention": "#Completion and Stimulation Tools",
+            "#cement job": "Cementing Accessories",
+            "Drill Bit": "Casing Inspection Log",
+            "Gravel Pack": "Junk Basket"
+        },
+        {
+            "#well intervention": "#Small Tools and Consumables",
+            "#cement job": "Well Completion Equipment",
+            "Drill Bit": "Caliper Tool",
+            "Gravel Pack": "Milling Tool"
+        },
+        {
+            "#well intervention": "#Fluids and Chemicals",
+            "#cement job": "Pump Services and Rentals",
+            "Drill Bit": "Ultrasonic Imaging Tool",
+            "Gravel Pack": "Fishing Tool"
+        },
+        {
+            "#well intervention": "#Processes and Operations",
+            "#cement job": "Downhole Pumps",
+            "Drill Bit": "Pressure Sensors",
+            "Gravel Pack": "Well Tractor"
+        },
+        {
+            "#well intervention": "#Drilling Tools and Equipment",
+            "#cement job": "High-Pressure Pumps",
+            "Drill Bit": "Well Integrity Monitoring System",
+            "Gravel Pack": "Coiled Tubing"
+        },
+        {
+            "#well intervention": "Electrical Submersible Pumps (ESP)",
+            "#cement job": "Side Pocket Mandrel",
+            "Drill Bit": "Cement Bond Log (CBL)",
+            "Gravel Pack": "Logging Tools"
+        },
+        {
+            "#well intervention": "Transfer Pumps",
+            "#cement job": "Gas Lift Mandrel",
+            "Drill Bit": "Tubing Inspection Tool",
+            "Gravel Pack": "Gamma Ray Tool"
+        },
+        {
+            "#well intervention": "Mud Pumps",
+            "#cement job": "Gas Lift Valve",
+            "Drill Bit": "Magnetic Flux Leakage (MFL) Tool",
+            "Gravel Pack": "Neutron Tool"
+        },
+        {
+            "#well intervention": "Volumetric Pumps",
+            "#cement job": "Standing Valve",
+            "Drill Bit": "Acoustic Emission Monitoring",
+            "Gravel Pack": "Sonic Tool"
+        },
+        {
+            "#well intervention": "Wastewater Pumps",
+            "#cement job": "Retrievable Plug",
+            "Drill Bit": "Blowout Preventer (BOP)",
+            "Gravel Pack": "Resistivity Tool"
+        },
+        {
+            "#well intervention": "Production and Intervention",
+            "#cement job": "Wireline-Retrievable Plug",
+            "Drill Bit": "Choke Manifold",
+            "Gravel Pack": "Caliper Log"
+        },
+        {
+            "#well intervention": "Artificial Lift Systems",
+            "#cement job": "Expansion Joint",
+            "Drill Bit": "Kill Line",
+            "Gravel Pack": "Cement Bond Log (CBL)"
+        },
+        {
+            "#well intervention": "Production Enhancement",
+            "#cement job": "Stinger Assembly",
+            "Drill Bit": "Mud-Gas Separator",
+            "Gravel Pack": "Perforating Gun"
+        },
+        {
+            "#well intervention": "Hydraulic Fracturing Support",
+            "#cement job": "Landing Nipple",
+            "Drill Bit": "Diverter System",
+            "Gravel Pack": "Depth Correlation Tool"
+        },
+        {
+            "#well intervention": "Gas Lift Optimization",
+            "#cement job": "Blast Joint",
+            "Drill Bit": "Gate Valve",
+            "Gravel Pack": "Pipe Recovery Tool"
+        },
+        {
+            "#well intervention": "Sand Control Services",
+            "#cement job": "Polished Bore Receptacle (PBR)",
+            "Drill Bit": "Ball Valve",
+            "Gravel Pack": "Memory Gauge"
+        },
+        {
+            "#well intervention": "Chemical Injection Systems",
+            "#cement job": "Cement Retainer",
+            "Drill Bit": "Check Valve",
+            "Gravel Pack": "Subsurface Pump"
+        },
+        {
+            "#well intervention": "Offshore and Onshore Services",
+            "#cement job": "Casing Packer",
+            "Drill Bit": "Pressure Relief Valve",
+            "Gravel Pack": "Rod Pump"
+        },
+        {
+            "#well intervention": "Offshore Rig Support",
+            "#cement job": "Hydrostatic Setting Tool",
+            "Drill Bit": "Annular Seal",
+            "Gravel Pack": "ESP (Electrical Submersible Pump)"
+        },
+        {
+            "#well intervention": "Onshore Well Services",
+            "#cement job": "Production Packer",
+            "Drill Bit": "Lubricator Assembly",
+            "Gravel Pack": "PCP (Progressing Cavity Pump)"
+        },
+        {
+            "#well intervention": "Remote Monitoring Systems",
+            "#cement job": "Perforation and Stimulation",
+            "Drill Bit": "Surface Safety Valve (SSV)",
+            "Gravel Pack": "Gas Lift Mandrel"
+        },
+        {
+            "#well intervention": "Well Testing and Evaluation",
+            "#cement job": "Perforating Gun",
+            "Drill Bit": "Backpressure Valve",
+            "Gravel Pack": "Gas Lift Valve"
+        },
+        {
+            "#well intervention": "Subsea Support Services",
+            "#cement job": "Shaped Charges",
+            "Drill Bit": "Drill Bit",
+            "Gravel Pack": "Plunger Lift"
+        },
+        {
+            "#well intervention": "Maintenance and Repair",
+            "#cement job": "Perforating Tubing",
+            "Drill Bit": "Tricone Bit",
+            "Gravel Pack": "Surface Pump"
+        },
+        {
+            "#well intervention": "Equipment Maintenance",
+            "#cement job": "Perforating Carrier",
+            "Drill Bit": "PDC Bit",
+            "Gravel Pack": "Choke Valve"
+        },
+        {
+            "#well intervention": "Rig Inspection and Repair",
+            "#cement job": "Wireline Perforator",
+            "Drill Bit": "Core Bit",
+            "Gravel Pack": "Separator"
+        },
+        {
+            "#well intervention": "Pump Repair Services",
+            "#cement job": "TCP (Tubing Conveyed Perforation)",
+            "Drill Bit": "Drill Pipe",
+            "Gravel Pack": "Flowline"
+        },
+        {
+            "#well intervention": "Tool Calibration Services",
+            "#cement job": "Acidizing Tools",
+            "Drill Bit": "Drill Collar",
+            "Gravel Pack": "Tubing Hanger"
+        },
+        {
+            "#well intervention": "Supply Chain and Logistics",
+            "#cement job": "Fracturing Sleeve",
+            "Drill Bit": "Mud Motor",
+            "Gravel Pack": "Fracturing Pump"
+        },
+        {
+            "#well intervention": "Oilfield Equipment Supply",
+            "#cement job": "Frac Plug",
+            "Drill Bit": "Stabilizer",
+            "Gravel Pack": "Blender"
+        },
+        {
+            "#well intervention": "Drilling Tools Supply",
+            "#cement job": "Frac Ball",
+            "Drill Bit": "Reamer",
+            "Gravel Pack": "Proppant"
+        },
+        {
+            "#well intervention": "Procurement and Logistics",
+            "#cement job": "Frac Sleeve",
+            "Drill Bit": "Kelly",
+            "Gravel Pack": "Slickwater"
+        },
+        {
+            "#well intervention": "RFQ Management",
+            "#cement job": "Fracturing Sand",
+            "Drill Bit": "Rotary Table",
+            "Gravel Pack": "Crosslinker"
+        },
+        {
+            "#well intervention": "Specialty Services",
+            "#cement job": "Fracturing Proppant",
+            "Drill Bit": "Top Drive",
+            "Gravel Pack": "Acidizing Tool"
+        },
+        {
+            "#well intervention": "Ultrasonic Logging Tools",
+            "#cement job": "Crosslinker",
+            "Drill Bit": "Swivel",
+            "Gravel Pack": "Perforation Cluster"
+        },
+        {
+            "#well intervention": "Acoustic Imaging Tools",
+            "#cement job": "Diverter Valve",
+            "Drill Bit": "Elevator",
+            "Gravel Pack": "Pressure Gauge"
+        },
+        {
+            "#well intervention": "Corrosion Monitoring",
+            "#cement job": "Acid Blender",
+            "Drill Bit": "Drill Line",
+            "Gravel Pack": "Temperature Sensor"
+        },
+        {
+            "#well intervention": "Leak Detection Services",
+            "#cement job": "Proppant Blender",
+            "Drill Bit": "Slips",
+            "Gravel Pack": "Flowmeter"
+        },
+        {
+            "#well intervention": "Environmental and Safety",
+            "#cement job": "Isolation Plug",
+            "Drill Bit": "Dog Collar",
+            "Gravel Pack": "Corrosion Probe"
+        },
+        {
+            "#well intervention": "Waste Management Services",
+            "#cement job": "Sand Control and Gravel Pack",
+            "Drill Bit": "Tongs",
+            "Gravel Pack": "Distributed Temperature Sensing (DTS)"
+        },
+        {
+            "#well intervention": "Environmental Monitoring",
+            "#cement job": "Gravel Pack Assembly",
+            "Drill Bit": "Kelly Bushing",
+            "Gravel Pack": "Distributed Acoustic Sensing (DAS)"
+        },
+        {
+            "#well intervention": "Spill Prevention Solutions",
+            "#cement job": "Crossover Tool",
+            "Drill Bit": "Spider",
+            "Gravel Pack": "Downhole Camera"
+        },
+        {
+            "#well intervention": "Health, Safety, and Environment (HSE) Compliance",
+            "#cement job": "Gravel Pack Carrier Fluid",
+            "Drill Bit": "Mud Pump",
+            "Gravel Pack": "PVT Analysis"
+        },
+        {
+            "#well intervention": "Completion Equipment and Tools",
+            "#cement job": "Gravel Pack Pump",
+            "Drill Bit": "Shale Shaker",
+            "Gravel Pack": "Subsea Tree"
+        },
+        {
+            "#well intervention": "Packers",
+            "#cement job": "Sand Control Screen",
+            "Drill Bit": "Desander",
+            "Gravel Pack": "Manifold"
+        },
+        {
+            "#well intervention": "Bridge Plugs",
+            "#cement job": "Expandable Sand Screen",
+            "Drill Bit": "Degasser",
+            "Gravel Pack": "Riser"
+        },
+        {
+            "#well intervention": "Liner Hanger",
+            "#cement job": "Standpipe Assembly",
+            "Drill Bit": "Mud Tank",
+            "Gravel Pack": "Umbilical"
+        },
+        {
+            "#well intervention": "Liner Top Packoff",
+            "#cement job": "Packer Sleeve",
+            "Drill Bit": "Casing Pipe",
+            "Gravel Pack": "Blowout Preventer (BOP) Stack"
+        },
+        {
+            "#well intervention": "Float Collar",
+            "#cement job": "Sand Jet Perforator",
+            "Drill Bit": "Float Collar",
+            "Gravel Pack": "Tensioner"
+        },
+        {
+            "#well intervention": "Float Shoe",
+            "#cement job": "Pre-Pack Screen",
+            "Drill Bit": "Float Shoe",
+            "Gravel Pack": "FPSO (Floating Production Storage and Offloading)"
+        },
+        {
+            "#well intervention": "Sliding Sleeve",
+            "#cement job": "Resin-Coated Sand",
+            "Drill Bit": "Cementing Plug",
+            "Gravel Pack": "Tongs"
+        },
+        {
+            "#well intervention": "Gravel Pack",
+            "#cement job": "Flow Control and Monitoring",
+            "Drill Bit": "Circulation Sub",
+            "Gravel Pack": "Torque Wrench"
+        },
+        {
+            "#well intervention": "Gravel Pack Screen",
+            "#cement job": "Choke Assembly",
+            "Drill Bit": "Wiper Plug",
+            "Gravel Pack": "Spinners"
+        },
+        {
+            "#well intervention": "Sand Control Screen",
+            "#cement job": "Flow Control Valve",
+            "Drill Bit": "Centralizer",
+            "Gravel Pack": "Mud Logger"
+        },
+        {
+            "#well intervention": "Expandable Screen",
+            "#cement job": "Sliding Sleeve Valve",
+            "Drill Bit": "Guide Shoe",
+            "Gravel Pack": "Cement Squeezer"
+        },
+        {
+            "#well intervention": "Perforated Liner",
+            "#cement job": "Injection Mandrel",
+            "Drill Bit": "Annular Preventer",
+            "Gravel Pack": "Swivel"
+        },
+        {
+            "#well intervention": "Blank Pipe",
+            "#cement job": "Inflow Control Device (ICD)",
+            "Drill Bit": "Ram Preventer",
+            "Gravel Pack": "Hydraulic Jar"
+        },
+        {
+            "#well intervention": "Tubing String",
+            "#cement job": "Autonomous Inflow Control Device (AICD)",
+            "Drill Bit": "Drill String",
+            "Gravel Pack": "Slip"
+        },
+        {
+            "#well intervention": "Tubing Hanger",
+            "#cement job": "Interval Control Valve (ICV)",
+            "Drill Bit": "Drill Stem Test Tools",
+            "Gravel Pack": "Kelly"
+        },
+        {
+            "#well intervention": "Completion String",
+            "#cement job": "Production Logging Tool (PLT)",
+            "Drill Bit": "Hydraulic Jar"
+        },
+        {
+            "#well intervention": "Flow Coupling",
+            "#cement job": "Memory Gauge",
+            "Drill Bit": "Rotary Swivel",
+            "Gravel Pack": "Tubing Tong"
+        },
+        {
+            "#well intervention": "Flow Sub",
+            "#cement job": "Fiber Optic Cable",
+            "Drill Bit": "Mud Cleaner",
+            "Gravel Pack": "Hydraulic Tong"
+        },
+        {
+            "#well intervention": "Check Valve",
+            "#cement job": "Distributed Temperature Sensing (DTS)",
+            "Drill Bit": "Blowout Preventer (BOP)",
+            "Gravel Pack": "Slickline"
+        },
+        {
+            "#well intervention": "Ball Valve",
+            "#cement job": "Distributed Acoustic Sensing (DAS)",
+            "Drill Bit": "Drilling Jar",
+            "Gravel Pack": "Wireline"
+        },
+        {
+            "#well intervention": "Plug Valve",
+            "#cement job": "Downhole Monitoring and Intervention",
+            "Drill Bit": "Formation Tester",
+            "Gravel Pack": "Coiled Tubing"
+        },
+        {
+            "#well intervention": "Isolation Valve",
+            "#cement job": "Pressure Gauge",
+            "Drill Bit": "Mud Bucket",
+            "Gravel Pack": "Fishing Tool"
+        },
+        {
+            "#well intervention": "Safety Valve",
+            "#cement job": "Temperature Gauge",
+            "Drill Bit": "Cement Basket",
+            "Gravel Pack": "Spear"
+        },
+        {
+            "#well intervention": "Subsurface Safety Valve (SSSV)",
+            "#cement job": "Production Logging Tool",
+            "Drill Bit": "Pipe Wrenches",
+            "Gravel Pack": "Overshot"
+        },
+        {
+            "#well intervention": "Surface-Controlled Subsurface Safety Valve (SCSSV)",
+            "#cement job": "Downhole Flowmeter",
+            "Drill Bit": "Torque Sub",
+            "Gravel Pack": "Jar"
+        },
+        {
+            "#well intervention": "Tubing-Retrievable Safety Valve",
+            "#cement job": "Downhole Camera",
+            "Drill Bit": "Vibration Dampener",
+            "Gravel Pack": "Impression Block"
+        },
+        {
+            "#well intervention": "Injection Valve",
+            "#cement job": "PVT Sampler",
+            "Drill Bit": "Wellhead",
+            "Gravel Pack": "Tubing Cutter"
+        },
+        {
+            "#well intervention": "Circulation Valve",
+            "#cement job": "Slickline Tool",
+            "Drill Bit": "Tubing String",
+            "Gravel Pack": "Wireline Cutter"
+        },
+        {
+            "#well intervention": "Downhole Control Valve",
+            "#cement job": "Wireline Logging Tool",
+            "Drill Bit": "Flowline",
+            "Gravel Pack": "Stuffing Box"
+        },
+        {
+            "#well intervention": "Coiled Tubing Assembly",
+            "#cement job": "Casing",
+            "Drill Bit": "Choke",
+            "Gravel Pack": "Swab Cup"
+        },
+        {
+            "#well intervention": "Tractor Tool",
+            "#cement job": "Tubing",
+            "Drill Bit": "Christmas Tree",
+            "Gravel Pack": "Swabbing Tool"
+        },
+        {
+            "#well intervention": "Wellhead and Surface Equipment",
+            "#cement job": "Annulus",
+            "Drill Bit": "Surface Safety Valve (SSV)",
+            "Gravel Pack": "Packers"
+        },
+        {
+            "#well intervention": "Wellhead Assembly",
+            "#cement job": "Wellbore",
+            "Drill Bit": "Subsurface Safety Valve (SSSV)",
+            "Gravel Pack": "Bridge Plug"
+        },
+        {
+            "#well intervention": "Christmas Tree",
+            "#cement job": "Reservoir",
+            "Drill Bit": "Pumpjack",
+            "Gravel Pack": "Check Valve"
+        },
+        {
+            "#well intervention": "Flowline",
+            "#cement job": "Formation",
+            "Drill Bit": "Beam Pump",
+            "Gravel Pack": "Tubing Hanger"
+        },
+        {
+            "#well intervention": "Choke Valve",
+            "#cement job": "Hydrocarbons",
+            "Drill Bit": "Electrical Submersible Pump (ESP)",
+            "Gravel Pack": "Casing Hanger"
+        },
+        {
+            "#well intervention": "Injection Line",
+            "#cement job": "Zonal Isolation",
+            "Drill Bit": "Progressing Cavity Pump (PCP)",
+            "Gravel Pack": "Tubing Anchor"
+        },
+        {
+            "#well intervention": "Surface Safety Valve (SSV)",
+            "#cement job": "Pressure Control",
+            "Drill Bit": "Gas Lift Valve",
+            "Gravel Pack": "Seal Assembly"
+        },
+        {
+            "#well intervention": "Tubing Head Adapter",
+            "#cement job": "Completion",
+            "Drill Bit": "Gas Lift Mandrel",
+            "Gravel Pack": "Flow Tee"
+        },
+        {
+            "#well intervention": "Swivel Flange",
+            "#cement job": "Production String",
+            "Drill Bit": "Plunger Lift",
+            "Gravel Pack": "Snubbing Unit"
+        },
+        {
+            "#well intervention": "Wellhead Connector",
+            "#cement job": "Conductor Pipe",
+            "Drill Bit": "Downhole Pump",
+            "Gravel Pack": "Lifting Sub"
+        },
+        {
+            "#well intervention": "Casing Spool",
+            "#cement job": "Intermediate Casing",
+            "Drill Bit": "Rod String",
+            "Gravel Pack": "Casing Scraper"
+        },
+        {
+            "#well intervention": "Flange Bolts",
+            "#cement job": "Surface Casing",
+            "Drill Bit": "Production Casing",
+            "Gravel Pack": "Debris Basket"
+        },
+        {
+            "#well intervention": "Hammer Union",
+            "#cement job": "Production Casing",
+            "Drill Bit": "Separator",
+            "Gravel Pack": "Torque Wrench"
+        },
+        {
+            "#well intervention": "API Flange",
+            "#cement job": "Well Integrity",
+            "Drill Bit": "Heater Treater",
+            "Gravel Pack": "Crossover Sub"
+        },
+        {
+            "#well intervention": "Completion Fluids and Chemicals",
+            "#cement job": "API Standards",
+            "Drill Bit": "Chemical Injection System",
+            "Gravel Pack": "Pressure Gauge"
+        },
+        {
+            "#well intervention": "Completion Brine",
+            "#cement job": "Workover Rig",
+            "Drill Bit": "Sand Separator",
+            "Gravel Pack": "Bleeder Valve"
+        },
+        {
+            "#well intervention": "Salt-Saturated Brine",
+            "#cement job": "Subsurface Safety Valve (SSSV)",
+            "Drill Bit": "Flow Meter",
+            "Gravel Pack": "Blowout Preventer (BOP)"
+        },
+        {
+            "#well intervention": "Potassium Chloride (KCl) Solution",
+            "#cement job": "Barrier Envelope",
+            "Drill Bit": "Pressure Transmitter",
+            "Gravel Pack": "Lubricator"
+        },
+        {
+            "#well intervention": "Biocide",
+            "#cement job": "Leak Detection",
+            "Drill Bit": "Tubing Anchor Catcher",
+            "Gravel Pack": "Flow Control Valve"
+        },
+        {
+            "#well intervention": "Corrosion Inhibitor",
+            "#cement job": "Corrosion Monitoring",
+            "Drill Bit": "Artificial Lift",
+            "Gravel Pack": "Backpressure Valve"
+        },
+        {
+            "#well intervention": "Scale Inhibitor",
+            "#cement job": "Artificial Lift Equipment",
+            "Drill Bit": "Lift Efficiency",
+            "Gravel Pack": "Sand Bailers"
+        },
+        {
+            "#well intervention": "Emulsion Breaker",
+            "#cement job": "Wellhead Pressure Gauge",
+            "Drill Bit": "Lift Optimization",
+            "Gravel Pack": "Setting Tool"
+        },
+        {
+            "#well intervention": "Fluid Loss Additive",
+            "#cement job": "Corrosion Inhibitor",
+            "Drill Bit": "Lift System",
+            "Gravel Pack": "Circulating Valve"
+        },
+        {
+            "#well intervention": "Gelling Agent",
+            "#cement job": "Wax Inhibitor",
+            "Drill Bit": "Production Enhancement",
+            "Gravel Pack": "Packer Plug"
+        },
+        {
+            "#well intervention": "Viscosity Modifier",
+            "#cement job": "Choke Valve",
+            "Drill Bit": "Bottomhole Pressure (BHP)",
+            "Gravel Pack": "Acidizing Equipment"
+        },
+        {
+            "#well intervention": "Surfactant",
+            "#cement job": "Check Valve",
+            "Drill Bit": "Reservoir Pressure",
+            "Gravel Pack": "Gas Lift Mandrel"
+        },
+        {
+            "#well intervention": "Spacer Fluid",
+            "#cement job": "Oil Tank",
+            "Drill Bit": "Wellbore Pressure",
+            "Gravel Pack": "Gas Lift Valve"
+        },
+        {
+            "#well intervention": "Lost Circulation Material (LCM)",
+            "#cement job": "Flare Stack",
+            "Drill Bit": "Lift Curve",
+            "Gravel Pack": "Gas Lift Injection Valve"
+        },
+        {
+            "#well intervention": "Additional Small Tools and Components",
+            "#cement job": "Pig Launcher",
+            "Drill Bit": "Gas Lift",
+            "Gravel Pack": "Orifice Valve"
+        },
+        {
+            "#well intervention": "Crossovers",
+            "#cement job": "Pig Receiver",
+            "Drill Bit": "Pumping System",
+            "Gravel Pack": "Wireline-Retrievable Mandrel"
+        },
+        {
+            "#well intervention": "Adapter Sub",
+            "#cement job": "Flow Coupling",
+            "Drill Bit": "Hydraulic Lift",
+            "Gravel Pack": "Tubing-Retrievable Mandrel"
+        },
+        {
+            "#well intervention": "Thread Protectors",
+            "#cement job": "Tubing Retrievable Valve",
+            "Drill Bit": "Electrical Lift",
+            "Gravel Pack": "Annulus Pressure Valve"
+        },
+        {
+            "#well intervention": "Seal Rings",
+            "#cement job": "Surface Choke",
+            "Drill Bit": "Plunger Lift",
+            "Gravel Pack": "Pressure-Operated Valve"
+        },
+        {
+            "#well intervention": "O-Rings",
+            "#cement job": "Crossover Sub",
+            "Drill Bit": "Jet Pump",
+            "Gravel Pack": "Continuous Gas Lift"
+        },
+        {
+            "#well intervention": "Gaskets",
+            "#cement job": "Hammer",
+            "Drill Bit": "Sucker Rod Pump",
+            "Gravel Pack": "Intermittent Gas Lift"
+        },
+        {
+            "#well intervention": "Thread Locking Compound",
+            "#cement job": "Pipe Wrench",
+            "Drill Bit": "Beam Pump",
+            "Gravel Pack": "Compressor"
+        },
+        {
+            "#well intervention": "Circulation Sub",
+            "#cement job": "Spanner",
+            "Drill Bit": "Surface Pumping Unit",
+            "Gravel Pack": "Standing Valve"
+        },
+        {
+            "#well intervention": "Equalizing Valve",
+            "#cement job": "Torque Wrench",
+            "Drill Bit": "Injection Line",
+            "Gravel Pack": "Counterweights"
+        },
+        {
+            "#well intervention": "Pressure Relief Valve",
+            "#cement job": "Grease Gun",
+            "Drill Bit": "Injection Header",
+            "Gravel Pack": "Prime Mover"
+        },
+        {
+            "#well intervention": "Hydraulic Setting Tool",
+            "#cement job": "Thread Protector",
+            "Drill Bit": "Injection Point",
+            "Gravel Pack": "Gear Reducer"
+        },
+        {
+            "#well intervention": "Wireline Adapters",
+            "#cement job": "Safety Clamp",
+            "Drill Bit": "Check Valve",
+            "Gravel Pack": "Crank Assembly"
+        },
+        {
+            "#well intervention": "Wash Tool",
+            "#cement job": "Chain Tong",
+            "Drill Bit": "Backpressure Valve",
+            "Gravel Pack": "Wellhead Pumping Unit"
+        },
+        {
+            "#well intervention": "Drift Tool",
+            "#cement job": "Chain Hoist",
+            "Drill Bit": "Electrical Submersible Pump (ESP)",
+            "Gravel Pack": "Surface Unit"
+        },
+        {
+            "#well intervention": "Centralizer",
+            "#cement job": "Sledgehammer",
+            "Drill Bit": "Pump Intake",
+            "Gravel Pack": "Rod Clamp"
+        },
+        {
+            "#well intervention": "Bow Spring Centralizer",
+            "#cement job": "Hose Reel",
+            "Drill Bit": "Pump Stages",
+            "Gravel Pack": "Progressing Cavity Pump (PCP)"
+        },
+        {
+            "#well intervention": "Solid Centralizer",
+            "#cement job": "Cable Clamp",
+            "Drill Bit": "Centrifugal Pump",
+            "Gravel Pack": "Rotor"
+        },
+        {
+            "#well intervention": "Stop Collar",
+            "#cement job": "Flange Bolts",
+            "Drill Bit": "ESP Motor",
+            "Gravel Pack": "Stator"
+        },
+        {
+            "#well intervention": "Processes and Operations in Completions",
+            "#cement job": "Blind Flange",
+            "Drill Bit": "ESP Cable",
+            "Gravel Pack": "Drive Head"
+        },
+        {
+            "#well intervention": "Cementing",
+            "#cement job": "Gaskets",
+            "Drill Bit": "Seal Section",
+            "Gravel Pack": "Surface Drive System"
+        },
+        {
+            "#well intervention": "Perforation",
+            "#cement job": "O-Rings",
+            "Drill Bit": "Thrust Bearing",
+            "Gravel Pack": "Rod Drive System"
+        },
+        {
+            "#well intervention": "Gravel Packing",
+            "#cement job": "Thread Seal Tape",
+            "Drill Bit": "Intake Screen",
+            "Gravel Pack": "Flexible Shaft"
+        },
+        {
+            "#well intervention": "Acidizing",
+            "#cement job": "Hand Pump",
+            "Drill Bit": "Power Cable",
+            "Gravel Pack": "Coupling"
+        },
+        {
+            "#well intervention": "Hydraulic Fracturing",
+            "#cement job": "Crowfoot Wrench",
+            "Drill Bit": "Motor Lead Extension (MLE)",
+            "Gravel Pack": "Drive Rod"
+        },
+        {
+            "#well intervention": "Wellbore Cleanup",
+            "#cement job": "Screwdriver",
+            "Drill Bit": "Variable Speed Drive (VSD)",
+            "Gravel Pack": "Torque Anchor"
+        },
+        {
+            "#well intervention": "Displacement",
+            "#cement job": "Pry Bar",
+            "Drill Bit": "Pump Discharge",
+            "Gravel Pack": "Pump Inlet"
+        },
+        {
+            "#well intervention": "Flowback",
+            "#cement job": "Locking Pliers",
+            "Drill Bit": "Gas Handler",
+            "Gravel Pack": "Pump Outlet"
+        },
+        {
+            "#well intervention": "Pressure Testing",
+            "#cement job": "Ratchet",
+            "Drill Bit": "Downhole Sensor",
+            "Gravel Pack": "Stuffing Box"
+        },
+        {
+            "#well intervention": "Well Stimulation",
+            "#cement job": "Hex Key Set (Allen Wrenches)",
+            "Drill Bit": "Protector",
+            "Gravel Pack": "Plunger Lift System"
+        },
+        {
+            "#well intervention": "Plug and Abandonment (P&A)",
+            "#cement job": "Hose Fittings",
+            "Drill Bit": "Submersible Transformer",
+            "Gravel Pack": "Plunger"
+        },
+        {
+            "#well intervention": "Zonal Isolation",
+            "#cement job": "Swivel Joints",
+            "Drill Bit": "Surface Control Panel",
+            "Gravel Pack": "Bumper Spring"
+        },
+        {
+            "#well intervention": "Sand Control",
+            "#cement job": "Hose Couplings",
+            "Drill Bit": "ESP Gauge",
+            "Gravel Pack": "Surface Bumper"
+        },
+        {
+            "#well intervention": "Reservoir Monitoring",
+            "#cement job": "Pressure Relief Valve",
+            "Drill Bit": "ESP Head",
+            "Gravel Pack": "Lubricator"
+        },
+        {
+            "#well intervention": "Water Shutoff",
+            "#cement job": "Hose Clamps",
+            "Drill Bit": "Sucker Rod",
+            "Gravel Pack": "Flow Tee"
+        },
+        {
+            "#well intervention": "Scale Removal",
+            "#cement job": "Pipe Dope",
+            "Drill Bit": "Pump Jack",
+            "Gravel Pack": "Catcher"
+        },
+        {
+            "#well intervention": "Debris Removal",
+            "#cement job": "Anti-Seize Compound",
+            "Drill Bit": "Walking Beam",
+            "Gravel Pack": "Controller"
+        },
+        {
+            "#well intervention": "Wellhead",
+            "#cement job": "Wire Brush",
+            "Drill Bit": "Polished Rod",
+            "Gravel Pack": "Flow Line Valve"
+        },
+        {
+            "#well intervention": "Nozzle",
+            "#cement job": "Scraper",
+            "Drill Bit": "Rod String",
+            "Gravel Pack": "Motor Valve"
+        },
+        {
+            "#well intervention": "Throat",
+            "#cement job": "Drift Tool",
+            "Drill Bit": "Stuffing Box",
+            "Gravel Pack": "Lift Gas Controller"
+        },
+        {
+            "#well intervention": "Power Fluid",
+            "#cement job": "Taper Tap",
+            "Drill Bit": "Pump Barrel",
+            "Gravel Pack": "Bypass Valve"
+        },
+        {
+            "#well intervention": "Pumping Unit",
+            "#cement job": "Sand Separator",
+            "Drill Bit": "Plunger",
+            "Gravel Pack": "Velocity String"
+        },
+        {
+            "#well intervention": "Surface Pump",
+            "#cement job": "Downhole Gauges",
+            "Drill Bit": "Traveling Valve",
+            "Gravel Pack": "Jet Pump"
+        },
+        {
+            "#well intervention": "Downhole Pump",
+            "#cement job": "Pressure Sensors",
+            "Drill Bit": "Lift Design"
+        },
+        {
+            "#well intervention": "Power Fluid Line",
+            "#cement job": "Temperature Sensors",
+            "Drill Bit": "System Analysis"
+        },
+        {
+            "#well intervention": "Suction Chamber",
+            "#cement job": "Torque Anchor",
+            "Drill Bit": "Pressure Monitoring"
+        },
+        {
+            "#well intervention": "Diffuser",
+            "#cement job": "Packer",
+            "Drill Bit": "Well Testing"
+        },
+        {
+            "#well intervention": "Return Line",
+            "#cement job": "Casing Head",
+            "Drill Bit": "Production Logging"
+        },
+        {
+            "#well intervention": "Hydraulic Pump",
+            "#cement job": "Wellhead Adapter",
+            "Drill Bit": "Optimization"
+        },
+        {
+            "#well intervention": "Power Fluid Pump",
+            "#cement job": "Flowline Adapter",
+            "Drill Bit": "Troubleshooting"
+        },
+        {
+            "#well intervention": "Reciprocating Pump",
+            "#cement job": "Flow Tee",
+            "Drill Bit": "Efficiency Monitoring"
+        },
+        {
+            "#well intervention": "Hydraulic Rod Pump",
+            "#cement job": "Check Valve",
+            "Drill Bit": "Gas Injection Optimization"
+        },
+        {
+            "#well intervention": "Hydraulic Cylinder",
+            "#cement job": "Pressure Relief Valve",
+            "Drill Bit": "Variable Speed Control"
+        },
+        {
+            "#well intervention": "Flowline",
+            "#cement job": "Surface Monitoring System",
+            "Drill Bit": "Fluid Level Monitoring"
+        },
+        {
+            "#well intervention": "Control Valve",
+            "#cement job": "Power Fluid",
+            "Drill Bit": "Artificial Lift Retrofit"
+        },
+        {
+            "#well intervention": "Surface Power Unit",
+            "#cement job": "Lubrication Fluid",
+            "Drill Bit": "Wrenches"
+        },
+        {
+            "#well intervention": "Downhole Hydraulic Assembly",
+            "#cement job": "Corrosion Inhibitor",
+            "Drill Bit": "Torque Wrenches"
+        },
+        {
+            "#well intervention": "Hydraulic Motor",
+            "#cement job": "Scale Inhibitor",
+            "Drill Bit": "Hammer"
+        },
+        {
+            "#well intervention": "Power Oil System",
+            "#cement job": "Paraffin Inhibitor",
+            "Drill Bit": "Rod Clamps"
+        },
+        {
+            "#well intervention": "Annular Seal",
+            "#cement job": "Biocide",
+            "Drill Bit": "Cable Protectors"
+        },
+        {
+            "#well intervention": "Gas Separator",
+            "#cement job": "Surfactant",
+            "Drill Bit": "Flowline Clamps"
+        },
+        {
+            "#cement job": "Drag Reducer",
+            "Drill Bit": "Pressure Gauges"
+        },
+        {
+            "#cement job": "Anti-Foam Agent",
+            "Drill Bit": "Hand Tools"
+        },
+        {
+            "#cement job": "Lift Selection",
+            "Drill Bit": "Flange Bolts"
+        },
+        {
+            "Drill Bit": "Thread Protectors"
+        },
+        {
+            "Drill Bit": "Seals"
+        },
+        {
+            "Drill Bit": "O-Rings"
+        },
+        {
+            "Drill Bit": "Thread Locking Compound"
+        }
+    ]
+}

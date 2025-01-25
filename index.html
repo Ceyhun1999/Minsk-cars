@@ -154,6 +154,40 @@
         </div>
     </header>
     <main>
+        <section class="relative h-[100vh] flex items-center">
+            <video class="top-0 left-0 absolute w-full object-cover h-full" autoplay="" muted="" loop=""
+                id="fullscreen-video">
+                <source src="/img/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div style="background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 1) 0%, /* Черный цвет сверху */
+                rgba(0, 0, 0, 0) 50%, /* Прозрачность в середине */
+                rgba(0, 0, 0, 0.6) 100% /* Черный цвет снизу */
+              );
+              " class="absolute h-full w-full top-0 left-0">
+            </div>
+            <div class="!absolute lg:!bottom-0  -bottom-[10vh] w-full  z-40 text-white  flex flex-col justify-end ">
+                <div class=" ">
+                    <div class="container">
+                        <h2 class="lg:text-[44px] text-[24px] font-bold mb-8">Аренда авто премиум класса в Минск</h2>
+                        <p class="lg:text-[28px] text-[20px] fontPTbook">Категории автомобилей:</p>
+                    </div>
+                    <div class="mt-4 grid lg:grid-cols-4 grid-cols-2 flex-wrap ">
+                        <a href=""
+                            class="border border-[#515050]   border-solid duration-200 hover:bg-white hover:!text-[#2c2b2e]  bg-[#2c2b2e] lg:p-10 p-5 flex justify-center items-center lg:text-xl text-white ">Внедорожники</a>
+                        <a href=""
+                            class="border border-[#515050]   border-solid duration-200 hover:bg-white hover:!text-[#2c2b2e]  bg-[#2c2b2e] lg:p-10 p-5 flex justify-center items-center lg:text-xl text-white ">Кабриолеты</a>
+                        <a href=""
+                            class="border border-[#515050]   border-solid duration-200 hover:bg-white hover:!text-[#2c2b2e]  bg-[#2c2b2e] lg:p-10 p-5 flex justify-center items-center lg:text-xl text-white ">Спорткары</a>
+                        <a href=""
+                            class="border border-[#515050]   border-solid duration-200 hover:bg-white hover:!text-[#2c2b2e]  bg-[#2c2b2e] lg:p-10 p-5 flex justify-center items-center lg:text-xl text-white ">Премиум</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
         <section id="main-slider">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="slide-layer"></div>
@@ -176,24 +210,7 @@
                     </div>
                 </div>
             </div>
-            <div class="!absolute lg:!bottom-0  -bottom-[10vh] w-full  z-40 text-white  flex flex-col justify-end ">
-                <div class=" ">
-                    <div class="container">
-                        <h2 class="lg:text-[44px] text-[24px] font-bold mb-8">Аренда авто премиум класса в Минск</h2>
-                        <p class="lg:text-[28px] text-[20px] fontPTbook">Категории автомобилей:</p>
-                    </div>
-                    <div class="mt-4 grid lg:grid-cols-4 grid-cols-2 flex-wrap ">
-                        <a href=""
-                            class="border border-[#515050]   border-solid inline-block duration-200 hover:bg-white hover:!text-[#2c2b2e]  bg-[#2c2b2e] lg:p-10 p-5 flex justify-center items-center lg:text-xl text-white ">Внедорожники</a>
-                        <a href=""
-                            class="border border-[#515050]   border-solid inline-block duration-200 hover:bg-white hover:!text-[#2c2b2e]  bg-[#2c2b2e] lg:p-10 p-5 flex justify-center items-center lg:text-xl text-white ">Кабриолеты</a>
-                        <a href=""
-                            class="border border-[#515050]   border-solid inline-block duration-200 hover:bg-white hover:!text-[#2c2b2e]  bg-[#2c2b2e] lg:p-10 p-5 flex justify-center items-center lg:text-xl text-white ">Спорткары</a>
-                        <a href=""
-                            class="border border-[#515050]   border-solid inline-block duration-200 hover:bg-white hover:!text-[#2c2b2e]  bg-[#2c2b2e] lg:p-10 p-5 flex justify-center items-center lg:text-xl text-white ">Премиум</a>
-                    </div>
-                </div>
-            </div>
+
         </section>
         <section class="text-white">
             <div id="advantage">
@@ -366,38 +383,12 @@
                 </div>
             </div>
         </section>
-
-
-
-        <!-- <section>
-            <div class="container">
-                <div style="background: url(/img/advantages.png) center/cover" class="py-52 ">
-                    <div class="flex justify-center mx-auto gap-20 text-white">
-                        <div class="text-center ">
-                            <h2 style=" -webkit-text-stroke: 1px #fff; " class="mb-3 text-transparent text-8xl">10 лет
-                            </h2>
-                            <p class="text-lg max-w-64 mx-auto  font-medium">На рынке аренды премиальных автомобилей</p>
-                        </div>
-                        <div class="text-center ">
-                            <h2 style=" -webkit-text-stroke: 1px #fff; " class="mb-3 text-transparent text-8xl">72</h2>
-                            <p class="text-lg max-w-48 mx-auto  font-medium">автомобиля в нашем автопарке</p>
-                        </div>
-                        <div class="text-center ">
-                            <h2 style=" -webkit-text-stroke: 1px #fff;" class="mb-3  text-transparent text-8xl">1 млрд
-                            </h2>
-                            <p class="text-lg max-w-56 mx-auto  font-medium">Рублей стоимость автопарка Moscow Dream
-                                Cars</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
         <section class="lg:py-10 py-5">
             <div class="container">
                 <h2 class="text-white lg:text-4xl text-2xl font-bold mb-5">Категории автомобилей</h2>
                 <div class="grid md:grid-cols-2 lg:gap-3 gap-2" data-aos="fade-down" data-aos-duration="500">
                     <a href="" style="box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;"
-                        class="bg-[#222123] lg:py-10 py-5  flex lg:gap-5 gap-3  flex-col md:flex-row items-center justify-center group border border-transparent border-solid duration-200 hover:border-white"">
+                        class="bg-[#222123] lg:py-10 py-5  flex lg:gap-5 gap-3  flex-col md:flex-row items-center justify-center group border border-transparent border-solid duration-200 hover:border-white">
                         <h3 class=" text-white text-xl lg:text-3xl">Внедорожники</h3>
                         <div class="relative  ">
                             <img class="lg:w-44 w-32 relative z-10"
@@ -891,7 +882,7 @@
                     style="box-shadow: #111111 0px 0.0625em 0.0625em, #111111 0px 0.125em 0.5em, #111111 0px 0px 0px 1px inset;">
                     <img class="hidden lg:block absolute top-5 left-5" src="/img/left-corner.svg" alt="">
                     <img class="hidden lg:block  absolute bottom-5 right-5" src="/img/right-corner.svg" alt="">
-        
+
 
                     <div class="lg:grid flex flex-col-reverse items-center grid-cols-2 lg:gap-20 gap-10 w-full">
                         <div class="w-full">

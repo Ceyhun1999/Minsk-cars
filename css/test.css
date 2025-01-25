@@ -1,0 +1,1336 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+body {
+  user-select: none;
+  /* Запрещает выделение текста */
+  -webkit-user-select: none;
+  /* Для WebKit-браузеров */
+  -moz-user-select: none;
+  /* Для Firefox */
+  -ms-user-select: none;
+  /* Для IE/Edge */
+}
+
+.my-modal-back.disable,
+header .dropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dropdown-menu {
+  min-width: 238px !important;
+}
+
+.categories .categories__cards h2,
+h3 {
+  font-weight: 700;
+}
+
+.categories,
+.gallery .gallery-images {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.diagnostic .rowmy img,
+.flexibility img,
+.massage__inner img {
+  object-fit: cover;
+}
+
+@font-face {
+  font-family: venera;
+  src: url("/font/Venera-500.otf");
+}
+
+@font-face {
+  font-family: balgin;
+  src: url("/font/balgin-light-smexpanded.ttf");
+}
+
+@font-face {
+  font-family: horizon;
+  src: url("/font/horizon.otf");
+}
+
+*,
+:not(i),
+a,
+span,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  font-family: Montserrat;
+  background: #000;
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+b,
+strong {
+  font-weight: 600 !important;
+  margin-bottom: 30px;
+  display: block;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.my-modal-back {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999999;
+}
+
+.my-modal {
+  height: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  height: 30px;
+  border: none;
+  background: 0 0;
+}
+
+header {
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  background-color: #232222;
+  z-index: 5;
+}
+
+header .header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .header__menu>ul {
+  align-items: center;
+  display: flex;
+  gap: 45px;
+}
+
+header nav ul li .btm-line {
+  width: 0;
+  height: 3px;
+  background-color: gray;
+  transition: 0.4s;
+}
+
+header nav ul li:hover .btm-line {
+  width: 100%;
+}
+
+header .dropdown-menu {
+  transition: 0.5s !important;
+  display: block !important;
+  margin-top: 30px;
+  border-radius: 0 0 5px 5px !important;
+  background-color: #4e4e4e;
+}
+
+header .dropdown-menu a {
+  color: #fff;
+}
+
+header .dropdown:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 25px !important;
+}
+
+header .dropdown span {
+  padding-bottom: 5px;
+}
+
+.complex__card i,
+header .header__menu a,
+header .header__menu span {
+  font-weight: 600;
+}
+
+.header__bottom__line {
+  background-color: #8b8b8b;
+  text-align: center;
+  padding: 7px 0;
+}
+
+.banner {
+  background: linear-gradient(to top, #000, #0909091a),
+    url("/img/banner.webp") center;
+  height: 100%;
+  padding-bottom: 28px;
+}
+
+.banner .container {
+  height: calc(100vh - 146px);
+}
+
+.banner .banner__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 87%;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 60px;
+  font-weight: 300 !important;
+  font-family: venera;
+  margin-bottom: 20px;
+}
+
+.banner .banner__inner p {
+  color: #c6c6c6;
+  font-size: 27px;
+  letter-spacing: 1px;
+  margin-bottom: 90px;
+  font-family: balgin;
+}
+
+.banner .banner__inner img {
+  opacity: 0.3;
+  transform: translateY(-30px);
+}
+
+.socials p {
+  font-family: Horizon !important;
+  color: #993131cc;
+  font-weight: 900;
+}
+
+.banner .banner__bottom,
+.socials ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner__bottom button {
+  background: 0 0;
+  border: none;
+}
+
+.banner__bottom .sc-img {
+  opacity: 0.3;
+}
+
+.banner__bottom ul li img {
+  width: 22px;
+}
+
+.banner__bottom ul li:nth-child(2) img {
+  width: 24px !important;
+  margin-top: 4px;
+}
+
+.banner__bottom ul li:nth-child(3) img {
+  width: 20px !important;
+}
+
+.banner__bottom>div:first-child {
+  width: 120px;
+}
+
+.categories {
+  display: grid;
+  gap: 3px;
+}
+
+.categories .categories__cards {
+  height: 542px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.modal-btn,
+.prc {
+  font-weight: 600;
+}
+
+.categories .categories__cards:first-child {
+  background: linear-gradient(to top, #151313cc, #40313100),
+    url("/img/cate1.webp") center/cover;
+}
+
+.categories .categories__cards:first-child:hover {
+  background: linear-gradient(to top, #151313cc, #0000007b),
+    url("/img/cate1.webp") center/cover;
+}
+
+.categories .categories__cards:nth-child(2) {
+  background: linear-gradient(to top, #151313cc, #40313100),
+    url("/img/cate2.webp") center/cover;
+}
+
+.categories .categories__cards:nth-child(2):hover {
+  background: linear-gradient(to top, #151313cc, #0000007b),
+    url("/img/cate2.webp") center/cover;
+}
+
+.categories .categories__cards:nth-child(3) {
+  background: linear-gradient(to top, #151313cc, #40313100),
+    url("/img/cate3.webp") center/cover;
+}
+
+.categories .categories__cards:nth-child(3):hover {
+  background: linear-gradient(to top, #151313cc, #0000007b),
+    url("/img/cate3.webp") center/cover;
+}
+
+.categories .categories__cards button {
+  border: 2px solid #fff;
+  background: 0 0;
+  width: 247px;
+  padding-block: 3px;
+  margin-inline: auto;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.about hr,
+.advantages hr,
+.book hr,
+.complex hr {
+  width: 70%;
+  background: linear-gradient(to right, #ddd, #666);
+  height: 2px;
+  margin-left: auto;
+}
+
+.about .container {
+  font-size: 20px;
+  margin-block: 50px;
+}
+
+.gallery hr {
+  background: linear-gradient(to left, #ddd, #000);
+  width: 30%;
+  height: 2px;
+  margin: auto;
+}
+
+.connect label,
+.gallery,
+.gallery .container {
+  position: relative;
+}
+
+.gallery .gallery-images {
+  display: grid;
+  gap: 3px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  height: 870px;
+  margin-top: 50px;
+  position: relative;
+  padding-right: 40px;
+}
+
+.gallery .gallery-images img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+}
+
+.gallery .gallery-images::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-scroll {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  height: 189px;
+  width: 4px;
+  background-color: #2e2e2e;
+  border-radius: 2px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.gallery-scroll-thumb {
+  width: 12px;
+  height: 12px;
+  background-color: #747474;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.advantages .advntages__inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding: 40px 0 20px;
+  justify-items: center;
+}
+
+.advantages .advantages__card {
+  text-align: center;
+}
+
+.advantages .advantages__card p {
+  font-weight: 700;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.contact hr,
+.diagnostic hr,
+.lecture hr,
+.massage hr,
+.trainers hr {
+  background: linear-gradient(to left, #ddd, #000);
+  width: 30%;
+  height: 2px;
+  margin: auto auto 35px;
+}
+
+.complex__hr,
+.flexibility img,
+.prc {
+  margin-inline: auto;
+}
+
+.trainers .trainers__inner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.trainers .trainer__card {
+  max-width: 442px;
+  width: 100%;
+  text-align: center;
+}
+
+.trainers .trainer__card>img {
+  object-fit: cover;
+  height: 563px;
+}
+
+.trainers .trainer__card p {
+  font-size: 16px;
+  font-family: balgin;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.complex__hr,
+.complex__number {
+  margin-bottom: 20px;
+}
+
+.trainers .trainer__card span {
+  height: 70px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.trainers .trainer__card ul {
+  border-top: 1px solid #993131cc;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100px;
+  margin-inline: auto;
+  padding-top: 10px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.trainers .trainer__card ul img {
+  width: 22px;
+}
+
+.trainers .trainer__card button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-weight: 700;
+  width: 218px;
+  height: 30px;
+  margin: auto;
+  color: #fff;
+}
+
+.trainer-info {
+  font-family: Montserrat !important;
+  display: none;
+  transition: 0.4s;
+  text-align: start !important;
+}
+
+.trainer-info.active {
+  display: block !important;
+}
+
+.complex__text {
+  font-size: 20px;
+  margin-block: 40px;
+}
+
+.complex__card,
+.complex__main__card {
+  background: #454545;
+  border-radius: 15px;
+  border: 1px solid #f8f4f4;
+  padding: 30px 42px;
+  height: 600px;
+}
+
+.complex__card p {
+  font-size: 18px;
+}
+
+.complex__card b,
+.complex__main__card b {
+  font-size: 22px;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 600 !important;
+}
+
+.complex__hr {
+  background-color: #fff !important;
+  width: 127px;
+  margin-top: 40px;
+}
+
+.complex__main__card {
+  border: none !important;
+  background-color: #ebd5af !important;
+  margin-top: 40px;
+}
+
+.form-bottom input,
+.tgl-img {
+  background-color: transparent;
+}
+
+.complex__main__card b,
+.complex__main__card li {
+  filter: brightness(0);
+}
+
+.complex__main__card span {
+  font-size: 20px;
+}
+
+.form-bottom span,
+footer p {
+  font-size: 12px;
+}
+
+.complex__main__card li {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 20px;
+}
+
+form {
+  border: 1px solid #cfcfcf;
+  padding: 30px 40px;
+  background-color: #171717;
+  position: relative;
+}
+
+form input[type="text"],
+form textarea {
+  background-color: #545454;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  width: calc(100% - 130px);
+  outline: 0;
+}
+
+form textarea {
+  width: calc(100% - 130px) !important;
+}
+
+.cl {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.connect {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-block: 20px;
+}
+
+.connect label span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 132px;
+  height: 42px;
+  border-radius: 5px;
+  background-color: #545454;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.connect label input[type="radio"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.connect label input[type="radio"]:checked+span {
+  border: 1px solid #fff;
+}
+
+.form-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-bottom input {
+  width: 219px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid #fff;
+}
+
+.flexibility hr,
+.nutrion hr {
+  width: 70%;
+  background: linear-gradient(to right, #ddd, #666);
+  height: 2px;
+  margin-left: auto;
+}
+
+.nutrion .container>b {
+  font-size: 20px;
+}
+
+.nutrion .container>ul,
+.flexibility .container>ul {
+  font-size: 18px;
+}
+
+.lecture__inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 3px;
+}
+
+.lecture__cards {
+  height: 410px;
+  position: relative;
+}
+
+
+
+.lec__card .trainer-info.active,
+.nutrion__card .trainer-info.active {
+  padding: 30px 20px;
+}
+
+/* .lec__card:first-child .lecture__cards strong {
+  font-size: 40px;
+  margin-bottom: 0 !important;
+  font-weight: 500 !important;
+}
+
+.lec__card:first-child .lecture__cards b {
+  font-weight: 700 !important;
+  color: #dbad60;
+  font-size: 24px;
+} */
+
+.book .my,
+.lec__card .lecture__cards {
+  padding: 30px;
+}
+
+.lec__card .lecture__cards strong,
+b {
+  font-weight: 700 !important;
+}
+
+.lec__card .lecture__cards strong {
+  font-size: 32px;
+  margin-bottom: 10px !important;
+}
+
+.contact p,
+.lec__card .lecture__cards b,
+.nutrion .mb-5 {
+  font-size: 20px;
+}
+
+/* .lec__card:first-child .lecture__cards {
+  background: linear-gradient(to right, #a778c566, #2f2f2f0a),
+    url("/img/lec1.webp") center/cover;
+  padding: 75px 30px;
+}
+
+.lec__card:first-child .lecture__cards:hover {
+  background: linear-gradient(to right, #000000dc, #00000081),
+    url("/img/lec1.webp") center/cover;
+} */
+
+.lec__card:nth-child(1) .lecture__cards {
+  background: linear-gradient(to right, #000000cc, #2f2f2f14),
+    url("/img/lec1.webp") center/cover;
+}
+
+.lec__card:nth-child(1):hover .lecture__cards {
+  background: linear-gradient(to right, #000000dc, #00000081),
+    url("/img/lec1.webp") center/cover;
+}
+
+
+.lec__card:nth-child(2) .lecture__cards {
+  background: linear-gradient(to right, #000000cc, #2f2f2f14),
+    url("/img/lec2.webp") center/cover;
+}
+
+.lec__card:nth-child(2):hover .lecture__cards {
+  background: linear-gradient(to right, #000000dc, #00000081),
+    url("/img/lec2.webp") center/cover;
+}
+
+.lec__card:nth-child(3) .lecture__cards {
+  background: linear-gradient(to right, #000000cc, #2f2f2f14),
+    url("/img/lec3.webp") center/cover;
+}
+
+.lec__card:nth-child(3):hover .lecture__cards {
+  background: linear-gradient(to right, #000000dc, #00000081),
+    url("/img/lec3.webp") center/cover;
+}
+
+.lec__card:nth-child(4) .lecture__cards {
+  background: linear-gradient(to right, #000000cc, #2f2f2f14),
+    url("/img/lec4.webp") center/cover;
+}
+
+.lec__card:nth-child(4):hover .lecture__cards {
+  background: linear-gradient(to right, #000000dc, #00000081),
+    url("/img/lec4.webp") center/cover;
+}
+
+.lec__card:nth-child(5) .lecture__cards {
+  background: linear-gradient(to right, #000000cc, #2f2f2f14),
+    url("/img/lec5.webp") center/cover;
+}
+
+.lec__card:nth-child(5):hover .lecture__cards {
+  background: linear-gradient(to right, #000000dc, #00000081),
+    url("/img/lec5.webp") center/cover;
+}
+
+.lec__card:nth-child(6) .lecture__cards {
+  background: linear-gradient(to right, #000000cc, #2f2f2f14),
+    url("/img/lec6.webp") center/cover;
+}
+
+.lec__card:nth-child(6):hover .lecture__cards {
+  background: linear-gradient(to right, #000000dc, #00000081),
+    url("/img/lec6.webp") center/cover;
+}
+
+.tgl-img {
+  position: absolute;
+  right: 15px;
+  top: 380px;
+  transform: rotate(180deg);
+  border: none;
+}
+
+.modal-btn {
+  border: 1px solid #cf47ce;
+  margin: auto;
+  width: 220px;
+  height: 32px;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5e5959cc;
+  text-align: center;
+}
+
+.my,
+.nutrion hr {
+  margin-bottom: 30px;
+}
+
+.nutrion ul {
+  padding-left: 24px !important;
+  margin-bottom: 50px;
+}
+
+.flexibility li,
+.nutrion ul li {
+  list-style: disc !important;
+}
+
+.nutrion ul li::marker {
+  background-color: #fff;
+  color: #fff;
+}
+
+.massage__inner,
+.nutrion__inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3px;
+  row-gap: 20px;
+}
+
+.nutrion__card__inner {
+  height: 459px;
+  padding: 50px 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.prc {
+  margin-top: auto;
+  width: 130px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  background: 0 0;
+}
+
+.contact h5,
+.nutrion__card__inner strong {
+  font-size: 22px;
+}
+
+.nutrion__card:first-child .nutrion__card__inner,
+.nutrion__card:nth-child(2) .nutrion__card__inner {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.7) 0,
+      rgba(0, 0, 0, 0.3) 40%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.3) 80%,
+      rgba(0, 0, 0, 0.7) 100%),
+    url("/img/nutr1.webp") center/cover;
+}
+
+.nutrion__card:first-child:hover .nutrion__card__inner,
+.nutrion__card:nth-child(2):hover .nutrion__card__inner {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.7) 0,
+      rgba(0, 0, 0, 0.6) 40%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.6) 80%,
+      rgba(0, 0, 0, 0.7) 100%),
+    url("/img/nutr1.webp") center/cover;
+}
+
+.nutrion__card:nth-child(3) .nutrion__card__inner,
+.nutrion__card:nth-child(4) .nutrion__card__inner {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.7) 0,
+      rgba(0, 0, 0, 0.3) 40%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.3) 80%,
+      rgba(0, 0, 0, 0.7) 100%),
+    url("/img/nut2.webp") center/cover;
+}
+
+.nutrion__card:nth-child(3):hover .nutrion__card__inner,
+.nutrion__card:nth-child(4):hover .nutrion__card__inner {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.7) 0,
+      rgba(0, 0, 0, 0.6) 40%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.6) 80%,
+      rgba(0, 0, 0, 0.7) 100%),
+    url("/img/nut2.webp") center/cover;
+}
+
+.nutrion__card {
+  position: relative;
+}
+
+.nutrion__card .tgl-img {
+  top: 415px !important;
+}
+
+.my {
+  font-size: 20px;
+}
+
+.diagnostic .rowmy ul {
+  margin-bottom: 30px;
+  padding-left: 40px;
+}
+
+.book ul li,
+.diagnostic .rowmy ul li,
+.massage ul li {
+  list-style: disc !important;
+  font-size: 18px;
+}
+
+.diagnostic .rowmy ul li::marker {
+  background-color: #fff;
+  color: #fff;
+}
+
+.diagnostic .rowmy b {
+  margin-bottom: 20px !important;
+  font-size: 20px;
+}
+
+.diagnostic .nutrion__card:first-child .nutrion__card__inner,
+.diagnostic .nutrion__card:nth-child(2) .nutrion__card__inner {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.7) 80%,
+      rgba(0, 0, 0, 0.8) 100%),
+    url("/img/geo1.webp") center/cover !important;
+}
+
+.diagnostic .nutrion__card:first-child:hover .nutrion__card__inner,
+.diagnostic .nutrion__card:nth-child(2):hover .nutrion__card__inner {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0.8) 20%,
+      rgba(0, 0, 0, 0.8) 50%,
+      rgba(0, 0, 0, 0.8) 80%,
+      rgba(0, 0, 0, 0.8) 100%),
+    url("/img/geo1.webp") center/cover !important;
+}
+
+.diagnostic .nutrion__card:nth-child(3) .nutrion__card__inner {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.7) 80%,
+      rgba(0, 0, 0, 0.8) 100%),
+    url("/img/geo2.webp") center/cover !important;
+}
+
+.diagnostic .nutrion__card:nth-child(3):hover .nutrion__card__inner {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.75) 0,
+      rgba(0, 0, 0, 0.75) 20%,
+      rgba(0, 0, 0, 0.75) 50%,
+      rgba(0, 0, 0, 0.75) 80%,
+      rgba(0, 0, 0, 0.75) 100%),
+    url("/img/geo2.webp") center/cover !important;
+}
+
+.book .nutrion__card:first-child .nutrion__card__inner {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.1) 0,
+      rgba(0, 0, 0, 0.1) 20%,
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0.7) 80%,
+      rgba(0, 0, 0, 0.7) 100%),
+    url("/img/book1.webp") center/cover !important;
+}
+
+.book .nutrion__card:first-child:hover .nutrion__card__inner {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6) 0,
+      rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.7) 80%,
+      rgba(0, 0, 0, 0.7) 100%),
+    url("/img/book1.webp") center/cover !important;
+}
+
+.book .nutrion__card:nth-child(2) .nutrion__card__inner {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.1) 0,
+      rgba(0, 0, 0, 0.1) 20%,
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0.7) 80%,
+      rgba(0, 0, 0, 0.7) 100%),
+    url("/img/book2.webp") center/cover !important;
+}
+
+.book .nutrion__card:nth-child(2):hover .nutrion__card__inner {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6) 0,
+      rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.7) 80%,
+      rgba(0, 0, 0, 0.7) 100%),
+    url("/img/book2.webp") center/cover !important;
+}
+
+.book ul {
+  padding-left: 18px;
+}
+
+.flexibility ul,
+.massage ul {
+  padding-left: 40px;
+}
+
+.book ul li::marker {
+  background-color: #fff;
+  color: #fff;
+}
+
+.book .trainer-info li {
+  font-size: 0;
+}
+
+.book .trainer-info.active li {
+  font-size: inherit;
+}
+
+.book .col-12 button {
+  width: 200px;
+  margin-top: 30px;
+}
+
+.flexibility b,
+.massage b {
+  margin-bottom: 10px !important;
+  font-size: 20px;
+}
+
+.massage ul li::marker {
+  background-color: #fff;
+  color: #fff;
+}
+
+.flexibility hr {
+  margin-bottom: 40px;
+}
+
+.flexibility ul {
+  font-family: 18px;
+}
+
+.flexibility li::marker {
+  background-color: #fff;
+  color: #fff;
+}
+
+.flexibility img {
+  width: 100%;
+  max-width: 700px;
+  height: 470px;
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact h4 {
+  font-size: 24px;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #cacaca80;
+}
+
+footer p {
+  padding-top: 20px;
+  line-height: 15px;
+}
+
+@media (max-width: 992px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav {
+    position: absolute;
+    background-color: #232222;
+    top: 79px;
+    width: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+  }
+
+  nav.active {
+    opacity: 1 !important;
+    font-size: inherit !important;
+    height: inherit !important;
+    visibility: visible !important;
+    width: 100%;
+  }
+
+  nav ul {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.hammenu img {
+  filter: invert(1);
+}
+
+.hammenu {
+  border: none;
+  background-color: transparent;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%
+}
+
+@media (min-width: 992px) {
+  .hammenu {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner .container {
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .dropdown-menu {
+    left: -80% !important;
+  }
+
+  .advantages .advntages__inner {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: start !important;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .advantages__card {
+    min-width: 140px !important;
+  }
+
+  .book .nutrion__inner {
+    margin-bottom: 20px;
+  }
+
+  .my-con p {
+    font-size: 14px !important;
+  }
+
+  .connect {
+    gap: 10px !important;
+    flex-wrap: nowrap !important;
+    margin-block: 10px !important;
+  }
+
+  .cl {
+    margin-bottom: 10px !important;
+  }
+
+  .trainer__card {
+    margin-bottom: 30px;
+  }
+
+  .gallery .gallery-images {
+    overflow: hidden !important;
+  }
+
+  .complex__card,
+  .complex__main__card {
+    height: inherit !important;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .banner h1 {
+    font-size: 45px !important;
+  }
+
+  .cl {
+    flex-wrap: wrap;
+  }
+
+  .cl input {
+    width: 100% !important;
+  }
+
+  .cl textarea {
+    width: 100% !important;
+  }
+
+  .complex__card p {
+    font-size: 16px;
+  }
+
+  .complex__number {
+    margin-top: 45px;
+  }
+
+  .gallery .gallery-images {
+    padding-right: 0 !important;
+  }
+
+  .advantages__card {
+    margin-bottom: 50px;
+  }
+
+  .gallery-scroll {
+    display: none;
+  }
+
+  .ch-none {
+    display: none;
+  }
+
+  .complex__main__card span {
+    font-size: 16px !important;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+input[type="submit"] {
+  padding: 0 10px;
+}
+
+h3 {
+  scroll-margin-top: 120px !important;
+}
+
+.fix {
+  position: relative;
+}
+
+.fix>img {
+  position: absolute;
+  left: 50.6%;
+  top: 50%;
+  transform: translate(-50%, -210%);
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  filter: invert(0.5);
+}
+
+#complex {
+  margin-top: 30px;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.full {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.diagnostic .trainer-info b {
+  text-transform: uppercase;
+}
+
+.success {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(220, 220, 220);
+  z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+  text-align: center;
+}
+
+.success strong {
+  font-size: 32px;
+  color: black !important;
+  margin-bottom: 0 !important;
+}
+
+.success p {
+  font-size: 20px;
+  color: black !important;
+  margin-bottom: 35px;
+}
+
+.success a {
+  color: black !important;
+  font-weight: bold;
+  width: 260px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid #383838;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  background-color: rgb(150, 150, 150);
+}
